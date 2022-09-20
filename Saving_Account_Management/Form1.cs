@@ -16,5 +16,15 @@ namespace Saving_Account_Management
         {
             InitializeComponent();
         }
+
+        private void materialTabSelector2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button42_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MaterialSkin, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialSkin.0.2.1\lib\MaterialSkin.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -54,6 +57,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -62,7 +68,9 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -75,6 +83,216 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\color1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\color2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\color3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutMe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Backgroud.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DongDuyet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Duyet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frmBackup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frmBangKeTinhLai.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frmCalculator.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frmChiTietPSGD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frmDangNhap.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frmDangXuat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frmDanhSachNV.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frmDanhSachSoCuaNgay.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frmDanhSachSoTK.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frmDMKyLaiTK.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frmDMLaiSuatTK.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frmDMLoaiGiaoDich.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frmDMLoaiTien.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frmDMTaiKhoan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frmDoimatkhau.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frmDoiMatKhau2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frmDuyetSo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frmExit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frmGiaoDichVien1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frmGuiThemVon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frmhelp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frmKhachHang.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frmLoaiTK.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frmLogin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frmMoSoTietKiem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frmNhanVien.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frmNhomNguoiDung.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frmPhanNhom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frmPhanQuyen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frmPhatSinhTK.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frmPhieuChi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frmPhieuLuu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frmPhieuThu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frmQuayGD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frmQuayGD1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frmQuyen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frmRestore.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frmRutTienTietKiem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frmSoCoKyHan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frmSoDuTK.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frmSoKhongKHan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frmTaiKhoan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frmTimNhanVien.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frmTimSo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\helpSuper.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InPhieu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogoDHAG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logoMX.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LuuDuyetSo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NhapLai.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Refresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ThanhTien.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ThanhTien1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\XoaDuyet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bankimg.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
