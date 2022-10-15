@@ -26,5 +26,15 @@ namespace Saving_Account_Management
         {
 
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button47_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

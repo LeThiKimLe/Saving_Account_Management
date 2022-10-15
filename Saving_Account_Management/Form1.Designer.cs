@@ -31,10 +31,9 @@ namespace Saving_Account_Management
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.button20 = new System.Windows.Forms.Button();
             this.button21 = new System.Windows.Forms.Button();
             this.button22 = new System.Windows.Forms.Button();
             this.panel9 = new System.Windows.Forms.Panel();
@@ -44,12 +43,8 @@ namespace Saving_Account_Management
             this.button26 = new System.Windows.Forms.Button();
             this.button27 = new System.Windows.Forms.Button();
             this.panel10 = new System.Windows.Forms.Panel();
-            this.button28 = new System.Windows.Forms.Button();
             this.button29 = new System.Windows.Forms.Button();
             this.button30 = new System.Windows.Forms.Button();
-            this.panel12 = new System.Windows.Forms.Panel();
-            this.button31 = new System.Windows.Forms.Button();
-            this.button32 = new System.Windows.Forms.Button();
             this.button33 = new System.Windows.Forms.Button();
             this.panel13 = new System.Windows.Forms.Panel();
             this.button39 = new System.Windows.Forms.Button();
@@ -57,7 +52,8 @@ namespace Saving_Account_Management
             this.button41 = new System.Windows.Forms.Button();
             this.button42 = new System.Windows.Forms.Button();
             this.button43 = new System.Windows.Forms.Button();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.panel14 = new System.Windows.Forms.Panel();
             this.panel15 = new System.Windows.Forms.Panel();
             this.button44 = new System.Windows.Forms.Button();
@@ -65,35 +61,34 @@ namespace Saving_Account_Management
             this.button46 = new System.Windows.Forms.Button();
             this.button47 = new System.Windows.Forms.Button();
             this.button48 = new System.Windows.Forms.Button();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
+            this.button11 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage4.SuspendLayout();
-            this.tabPage5.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel8.SuspendLayout();
             this.panel9.SuspendLayout();
             this.panel10.SuspendLayout();
-            this.panel12.SuspendLayout();
             this.panel13.SuspendLayout();
+            this.tabPage5.SuspendLayout();
             this.panel14.SuspendLayout();
             this.panel15.SuspendLayout();
             this.tabPage6.SuspendLayout();
@@ -116,7 +111,7 @@ namespace Saving_Account_Management
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1782, 953);
+            this.tabControl1.Size = new System.Drawing.Size(1333, 953);
             this.tabControl1.TabIndex = 1;
             // 
             // tabPage4
@@ -126,70 +121,50 @@ namespace Saving_Account_Management
             this.tabPage4.Location = new System.Drawing.Point(4, 25);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(1774, 924);
+            this.tabPage4.Size = new System.Drawing.Size(1325, 924);
             this.tabPage4.TabIndex = 0;
             this.tabPage4.Text = "QUẢN LÝ";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
-            // tabPage5
+            // groupBox3
             // 
-            this.tabPage5.Controls.Add(this.groupBox4);
-            this.tabPage5.Controls.Add(this.panel14);
-            this.tabPage5.Location = new System.Drawing.Point(4, 25);
-            this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(1774, 924);
-            this.tabPage5.TabIndex = 1;
-            this.tabPage5.Text = "QUẢN LÝ CHI TIẾT";
-            this.tabPage5.UseVisualStyleBackColor = true;
+            this.groupBox3.BackgroundImage = global::Saving_Account_Management.Properties.Resources.Bankimg;
+            this.groupBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.groupBox3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.groupBox3.Location = new System.Drawing.Point(3, 159);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(1319, 762);
+            this.groupBox3.TabIndex = 2;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "groupBox3";
             // 
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.Transparent;
             this.panel7.BackgroundImage = global::Saving_Account_Management.Properties.Resources.color1;
-            this.panel7.Controls.Add(this.panel5);
             this.panel7.Controls.Add(this.panel8);
             this.panel7.Controls.Add(this.panel9);
             this.panel7.Controls.Add(this.panel10);
-            this.panel7.Controls.Add(this.panel12);
             this.panel7.Controls.Add(this.panel13);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel7.Location = new System.Drawing.Point(3, 3);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(1768, 156);
+            this.panel7.Size = new System.Drawing.Size(1319, 156);
             this.panel7.TabIndex = 1;
             // 
             // panel8
             // 
             this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel8.Controls.Add(this.button20);
+            this.panel8.Controls.Add(this.button11);
             this.panel8.Controls.Add(this.button21);
             this.panel8.Controls.Add(this.button22);
             this.panel8.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.panel8.Location = new System.Drawing.Point(1197, 3);
+            this.panel8.Location = new System.Drawing.Point(926, 3);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(248, 150);
+            this.panel8.Size = new System.Drawing.Size(237, 150);
             this.panel8.TabIndex = 5;
-            // 
-            // button20
-            // 
-            this.button20.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button20.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.button20.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button20.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.button20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button20.ForeColor = System.Drawing.Color.Teal;
-            this.button20.Image = global::Saving_Account_Management.Properties.Resources.frmPhieuThu;
-            this.button20.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button20.Location = new System.Drawing.Point(124, 3);
-            this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(119, 94);
-            this.button20.TabIndex = 3;
-            this.button20.Text = "Sửa Thông tin Khách hàng";
-            this.button20.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button20.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
-            this.button20.UseVisualStyleBackColor = true;
             // 
             // button21
             // 
@@ -202,7 +177,7 @@ namespace Saving_Account_Management
             this.button21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.button21.Location = new System.Drawing.Point(0, 103);
             this.button21.Name = "button21";
-            this.button21.Size = new System.Drawing.Size(246, 45);
+            this.button21.Size = new System.Drawing.Size(235, 45);
             this.button21.TabIndex = 2;
             this.button21.Text = "Quản lí Khách hàng";
             this.button21.UseVisualStyleBackColor = false;
@@ -235,7 +210,7 @@ namespace Saving_Account_Management
             this.panel9.Controls.Add(this.button27);
             this.panel9.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.panel9.Location = new System.Drawing.Point(854, 3);
+            this.panel9.Location = new System.Drawing.Point(583, 3);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(337, 150);
             this.panel9.TabIndex = 4;
@@ -332,34 +307,15 @@ namespace Saving_Account_Management
             // panel10
             // 
             this.panel10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel10.Controls.Add(this.button28);
             this.panel10.Controls.Add(this.button29);
+            this.panel10.Controls.Add(this.button33);
             this.panel10.Controls.Add(this.button30);
             this.panel10.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.panel10.Location = new System.Drawing.Point(601, 3);
+            this.panel10.Location = new System.Drawing.Point(348, 3);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(248, 150);
+            this.panel10.Size = new System.Drawing.Size(230, 150);
             this.panel10.TabIndex = 3;
-            // 
-            // button28
-            // 
-            this.button28.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button28.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.button28.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button28.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.button28.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button28.ForeColor = System.Drawing.Color.Teal;
-            this.button28.Image = global::Saving_Account_Management.Properties.Resources.frmPhieuThu;
-            this.button28.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button28.Location = new System.Drawing.Point(124, 3);
-            this.button28.Name = "button28";
-            this.button28.Size = new System.Drawing.Size(105, 94);
-            this.button28.TabIndex = 3;
-            this.button28.Text = "Sửa DS Nhân viên";
-            this.button28.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button28.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
-            this.button28.UseVisualStyleBackColor = true;
             // 
             // button29
             // 
@@ -372,7 +328,7 @@ namespace Saving_Account_Management
             this.button29.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.button29.Location = new System.Drawing.Point(0, 103);
             this.button29.Name = "button29";
-            this.button29.Size = new System.Drawing.Size(246, 45);
+            this.button29.Size = new System.Drawing.Size(228, 45);
             this.button29.TabIndex = 2;
             this.button29.Text = "Quản lí Nhân viên";
             this.button29.UseVisualStyleBackColor = false;
@@ -387,61 +343,13 @@ namespace Saving_Account_Management
             this.button30.ForeColor = System.Drawing.Color.Teal;
             this.button30.Image = global::Saving_Account_Management.Properties.Resources.frmNhomNguoiDung;
             this.button30.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button30.Location = new System.Drawing.Point(12, 3);
+            this.button30.Location = new System.Drawing.Point(115, 3);
             this.button30.Name = "button30";
-            this.button30.Size = new System.Drawing.Size(106, 94);
+            this.button30.Size = new System.Drawing.Size(110, 94);
             this.button30.TabIndex = 0;
             this.button30.Text = "Danh sách Nhân viên";
             this.button30.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button30.UseVisualStyleBackColor = true;
-            // 
-            // panel12
-            // 
-            this.panel12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel12.Controls.Add(this.button31);
-            this.panel12.Controls.Add(this.button32);
-            this.panel12.Controls.Add(this.button33);
-            this.panel12.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.panel12.Location = new System.Drawing.Point(347, 3);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(248, 150);
-            this.panel12.TabIndex = 2;
-            // 
-            // button31
-            // 
-            this.button31.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button31.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.button31.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button31.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.button31.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button31.ForeColor = System.Drawing.Color.Teal;
-            this.button31.Image = global::Saving_Account_Management.Properties.Resources.frmPhieuThu;
-            this.button31.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button31.Location = new System.Drawing.Point(124, 3);
-            this.button31.Name = "button31";
-            this.button31.Size = new System.Drawing.Size(105, 94);
-            this.button31.TabIndex = 3;
-            this.button31.Text = "Sửa Tài khoản";
-            this.button31.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button31.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
-            this.button31.UseVisualStyleBackColor = true;
-            // 
-            // button32
-            // 
-            this.button32.BackColor = System.Drawing.Color.LightBlue;
-            this.button32.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.button32.Enabled = false;
-            this.button32.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.button32.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button32.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button32.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button32.Location = new System.Drawing.Point(0, 103);
-            this.button32.Name = "button32";
-            this.button32.Size = new System.Drawing.Size(246, 45);
-            this.button32.TabIndex = 2;
-            this.button32.Text = "Quản lí Tài khoản Đăng nhập";
-            this.button32.UseVisualStyleBackColor = false;
             // 
             // button33
             // 
@@ -453,7 +361,7 @@ namespace Saving_Account_Management
             this.button33.ForeColor = System.Drawing.Color.Teal;
             this.button33.Image = global::Saving_Account_Management.Properties.Resources.frmSoKhongKHan;
             this.button33.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button33.Location = new System.Drawing.Point(12, 3);
+            this.button33.Location = new System.Drawing.Point(3, 3);
             this.button33.Name = "button33";
             this.button33.Size = new System.Drawing.Size(106, 94);
             this.button33.TabIndex = 0;
@@ -566,28 +474,41 @@ namespace Saving_Account_Management
             this.button43.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button43.UseVisualStyleBackColor = true;
             // 
-            // groupBox3
+            // tabPage5
             // 
-            this.groupBox3.BackgroundImage = global::Saving_Account_Management.Properties.Resources.Bankimg;
-            this.groupBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.groupBox3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.groupBox3.Location = new System.Drawing.Point(3, 159);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(1768, 762);
-            this.groupBox3.TabIndex = 2;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "groupBox3";
+            this.tabPage5.Controls.Add(this.groupBox4);
+            this.tabPage5.Controls.Add(this.panel14);
+            this.tabPage5.Location = new System.Drawing.Point(4, 25);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage5.Size = new System.Drawing.Size(1325, 924);
+            this.tabPage5.TabIndex = 1;
+            this.tabPage5.Text = "QUẢN LÝ DANH MỤC";
+            this.tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.BackgroundImage = global::Saving_Account_Management.Properties.Resources.Bankimg;
+            this.groupBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.groupBox4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.groupBox4.Location = new System.Drawing.Point(3, 159);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(1319, 762);
+            this.groupBox4.TabIndex = 3;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "groupBox4";
             // 
             // panel14
             // 
             this.panel14.BackColor = System.Drawing.Color.Transparent;
             this.panel14.BackgroundImage = global::Saving_Account_Management.Properties.Resources.color1;
+            this.panel14.Controls.Add(this.panel5);
             this.panel14.Controls.Add(this.panel15);
             this.panel14.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel14.Location = new System.Drawing.Point(3, 3);
             this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(1768, 156);
+            this.panel14.Size = new System.Drawing.Size(1319, 156);
             this.panel14.TabIndex = 2;
             // 
             // panel15
@@ -675,8 +596,9 @@ namespace Saving_Account_Management
             this.button47.Name = "button47";
             this.button47.Size = new System.Drawing.Size(463, 45);
             this.button47.TabIndex = 2;
-            this.button47.Text = "Quản lí Danh mục";
+            this.button47.Text = "Danh mục Tiết kiệm";
             this.button47.UseVisualStyleBackColor = false;
+            this.button47.Click += new System.EventHandler(this.button47_Click);
             // 
             // button48
             // 
@@ -693,22 +615,9 @@ namespace Saving_Account_Management
             this.button48.Name = "button48";
             this.button48.Size = new System.Drawing.Size(106, 94);
             this.button48.TabIndex = 0;
-            this.button48.Text = "DM Kỳ lãi Tiết kiệm";
+            this.button48.Text = "DM Loại Tiết kiệm";
             this.button48.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button48.UseVisualStyleBackColor = true;
-            // 
-            // groupBox4
-            // 
-            this.groupBox4.BackgroundImage = global::Saving_Account_Management.Properties.Resources.Bankimg;
-            this.groupBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.groupBox4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.groupBox4.Location = new System.Drawing.Point(3, 159);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(1768, 762);
-            this.groupBox4.TabIndex = 3;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "groupBox4";
             // 
             // tabPage6
             // 
@@ -717,10 +626,23 @@ namespace Saving_Account_Management
             this.tabPage6.Location = new System.Drawing.Point(4, 25);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(1774, 924);
+            this.tabPage6.Size = new System.Drawing.Size(1325, 924);
             this.tabPage6.TabIndex = 2;
             this.tabPage6.Text = "THỐNG KÊ";
             this.tabPage6.UseVisualStyleBackColor = true;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.BackgroundImage = global::Saving_Account_Management.Properties.Resources.Bankimg;
+            this.groupBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.groupBox1.Location = new System.Drawing.Point(3, 159);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(1319, 762);
+            this.groupBox1.TabIndex = 4;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "groupBox1";
             // 
             // panel1
             // 
@@ -730,7 +652,7 @@ namespace Saving_Account_Management
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1768, 156);
+            this.panel1.Size = new System.Drawing.Size(1319, 156);
             this.panel1.TabIndex = 3;
             // 
             // panel2
@@ -820,19 +742,6 @@ namespace Saving_Account_Management
             this.button5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button5.UseVisualStyleBackColor = true;
             // 
-            // groupBox1
-            // 
-            this.groupBox1.BackgroundImage = global::Saving_Account_Management.Properties.Resources.Bankimg;
-            this.groupBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.groupBox1.Location = new System.Drawing.Point(3, 159);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1768, 762);
-            this.groupBox1.TabIndex = 4;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
-            // 
             // tabPage1
             // 
             this.tabPage1.Controls.Add(this.groupBox2);
@@ -840,10 +749,23 @@ namespace Saving_Account_Management
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1774, 924);
+            this.tabPage1.Size = new System.Drawing.Size(1325, 924);
             this.tabPage1.TabIndex = 3;
             this.tabPage1.Text = "CÁ NHÂN";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.BackgroundImage = global::Saving_Account_Management.Properties.Resources.Bankimg;
+            this.groupBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.groupBox2.Location = new System.Drawing.Point(3, 159);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(1319, 762);
+            this.groupBox2.TabIndex = 5;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "groupBox2";
             // 
             // panel3
             // 
@@ -853,7 +775,7 @@ namespace Saving_Account_Management
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(3, 3);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1768, 156);
+            this.panel3.Size = new System.Drawing.Size(1319, 156);
             this.panel3.TabIndex = 4;
             // 
             // panel4
@@ -923,19 +845,6 @@ namespace Saving_Account_Management
             this.button8.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button8.UseVisualStyleBackColor = true;
             // 
-            // groupBox2
-            // 
-            this.groupBox2.BackgroundImage = global::Saving_Account_Management.Properties.Resources.Bankimg;
-            this.groupBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.groupBox2.Location = new System.Drawing.Point(3, 159);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(1768, 762);
-            this.groupBox2.TabIndex = 5;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "groupBox2";
-            // 
             // panel5
             // 
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -944,10 +853,10 @@ namespace Saving_Account_Management
             this.panel5.Controls.Add(this.button10);
             this.panel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.panel5.Location = new System.Drawing.Point(1451, 3);
+            this.panel5.Location = new System.Drawing.Point(476, 3);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(248, 150);
-            this.panel5.TabIndex = 6;
+            this.panel5.TabIndex = 7;
             // 
             // button1
             // 
@@ -981,7 +890,7 @@ namespace Saving_Account_Management
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(246, 45);
             this.button9.TabIndex = 2;
-            this.button9.Text = "Quản lí Chi nhánh";
+            this.button9.Text = "Danh mục chi nhánh";
             this.button9.UseVisualStyleBackColor = false;
             // 
             // button10
@@ -1002,26 +911,44 @@ namespace Saving_Account_Management
             this.button10.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button10.UseVisualStyleBackColor = true;
             // 
+            // button11
+            // 
+            this.button11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button11.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.button11.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.button11.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button11.ForeColor = System.Drawing.Color.Teal;
+            this.button11.Image = global::Saving_Account_Management.Properties.Resources.frmTaiKhoan;
+            this.button11.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button11.Location = new System.Drawing.Point(124, 3);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(104, 94);
+            this.button11.TabIndex = 6;
+            this.button11.Text = "Tác vụ Khách hàng";
+            this.button11.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button11.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Linen;
-            this.ClientSize = new System.Drawing.Size(1782, 953);
+            this.ClientSize = new System.Drawing.Size(1333, 953);
             this.Controls.Add(this.tabControl1);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage4.ResumeLayout(false);
-            this.tabPage5.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
             this.panel8.ResumeLayout(false);
             this.panel9.ResumeLayout(false);
             this.panel10.ResumeLayout(false);
-            this.panel12.ResumeLayout(false);
             this.panel13.ResumeLayout(false);
+            this.tabPage5.ResumeLayout(false);
             this.panel14.ResumeLayout(false);
             this.panel15.ResumeLayout(false);
             this.tabPage6.ResumeLayout(false);
@@ -1041,7 +968,6 @@ namespace Saving_Account_Management
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.Button button20;
         private System.Windows.Forms.Button button21;
         private System.Windows.Forms.Button button22;
         private System.Windows.Forms.Panel panel9;
@@ -1051,12 +977,8 @@ namespace Saving_Account_Management
         private System.Windows.Forms.Button button26;
         private System.Windows.Forms.Button button27;
         private System.Windows.Forms.Panel panel10;
-        private System.Windows.Forms.Button button28;
         private System.Windows.Forms.Button button29;
         private System.Windows.Forms.Button button30;
-        private System.Windows.Forms.Panel panel12;
-        private System.Windows.Forms.Button button31;
-        private System.Windows.Forms.Button button32;
         private System.Windows.Forms.Button button33;
         private System.Windows.Forms.Panel panel13;
         private System.Windows.Forms.Button button39;
@@ -1088,6 +1010,7 @@ namespace Saving_Account_Management
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button9;
