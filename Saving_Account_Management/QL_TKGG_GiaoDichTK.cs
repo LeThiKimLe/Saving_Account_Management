@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Saving_Account_Management
 {
-    public partial class QL_DSTKDN : Form
+    public partial class QL_TKGG_GiaoDichTK : Form
     {
-        public QL_DSTKDN()
+        public QL_TKGG_GiaoDichTK()
         {
             InitializeComponent();
         }

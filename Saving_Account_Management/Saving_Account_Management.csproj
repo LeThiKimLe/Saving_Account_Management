@@ -49,6 +49,36 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CN_ThongTin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CN_ThongTin.Designer.cs">
+      <DependentUpon>CN_ThongTin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DM_ChiNhanh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DM_ChiNhanh.Designer.cs">
+      <DependentUpon>DM_ChiNhanh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DM_LaiTietKiem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DM_LaiTietKiem.Designer.cs">
+      <DependentUpon>DM_LaiTietKiem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DM_LoaiGiaoDich.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DM_LoaiGiaoDich.Designer.cs">
+      <DependentUpon>DM_LoaiGiaoDich.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DM_LoaiTien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DM_LoaiTien.Designer.cs">
+      <DependentUpon>DM_LoaiTien.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -57,11 +87,23 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="QL_DSTKDN.cs">
+    <Compile Include="QL_DSKhachHang.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="QL_DSTKDN.Designer.cs">
-      <DependentUpon>QL_DSTKDN.cs</DependentUpon>
+    <Compile Include="QL_DSKhachHang.Designer.cs">
+      <DependentUpon>QL_DSKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QL_DSNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QL_DSNhanVien.Designer.cs">
+      <DependentUpon>QL_DSNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QL_DSSoTK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QL_DSSoTK.Designer.cs">
+      <DependentUpon>QL_DSSoTK.cs</DependentUpon>
     </Compile>
     <Compile Include="QL_NhomNguoiDung.cs">
       <SubType>Form</SubType>
@@ -87,6 +129,81 @@
     <Compile Include="QL_Quyen.Designer.cs">
       <DependentUpon>QL_Quyen.cs</DependentUpon>
     </Compile>
+    <Compile Include="QL_TacVuKH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QL_TacVuKH.Designer.cs">
+      <DependentUpon>QL_TacVuKH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QL_TacVuSoTK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QL_TacVuSoTK.Designer.cs">
+      <DependentUpon>QL_TacVuSoTK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QL_TK1L_GiaoDichTK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QL_TK1L_GiaoDichTK.Designer.cs">
+      <DependentUpon>QL_TK1L_GiaoDichTK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QL_TK1L_MoSo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QL_TK1L_MoSo.Designer.cs">
+      <DependentUpon>QL_TK1L_MoSo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QL_TK1L_TBGiaHan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QL_TK1L_TBGiaHan.Designer.cs">
+      <DependentUpon>QL_TK1L_TBGiaHan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QL_TKDangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QL_TKDangNhap.Designer.cs">
+      <DependentUpon>QL_TKDangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QL_TKGG_GiaoDichTK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QL_TKGG_GiaoDichTK.Designer.cs">
+      <DependentUpon>QL_TKGG_GiaoDichTK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QL_TKGG_MoSo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QL_TKGG_MoSo.Designer.cs">
+      <DependentUpon>QL_TKGG_MoSo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QL_TKGG_TBDenHan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QL_TKGG_TBDenHan.Designer.cs">
+      <DependentUpon>QL_TKGG_TBDenHan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TK_SoSoTK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TK_SoSoTK.Designer.cs">
+      <DependentUpon>TK_SoSoTK.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CN_ThongTin.resx">
+      <DependentUpon>CN_ThongTin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DM_ChiNhanh.resx">
+      <DependentUpon>DM_ChiNhanh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DM_LaiTietKiem.resx">
+      <DependentUpon>DM_LaiTietKiem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DM_LoaiGiaoDich.resx">
+      <DependentUpon>DM_LoaiGiaoDich.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DM_LoaiTien.resx">
+      <DependentUpon>DM_LoaiTien.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -100,6 +217,57 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="QL_DSKhachHang.resx">
+      <DependentUpon>QL_DSKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QL_DSNhanVien.resx">
+      <DependentUpon>QL_DSNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QL_DSSoTK.resx">
+      <DependentUpon>QL_DSSoTK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QL_NhomNguoiDung.resx">
+      <DependentUpon>QL_NhomNguoiDung.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QL_PhanNhom.resx">
+      <DependentUpon>QL_PhanNhom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QL_PhanQuyen.resx">
+      <DependentUpon>QL_PhanQuyen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QL_Quyen.resx">
+      <DependentUpon>QL_Quyen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QL_TacVuKH.resx">
+      <DependentUpon>QL_TacVuKH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QL_TacVuSoTK.resx">
+      <DependentUpon>QL_TacVuSoTK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QL_TK1L_GiaoDichTK.resx">
+      <DependentUpon>QL_TK1L_GiaoDichTK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QL_TK1L_MoSo.resx">
+      <DependentUpon>QL_TK1L_MoSo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QL_TK1L_TBGiaHan.resx">
+      <DependentUpon>QL_TK1L_TBGiaHan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QL_TKDangNhap.resx">
+      <DependentUpon>QL_TKDangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QL_TKGG_GiaoDichTK.resx">
+      <DependentUpon>QL_TKGG_GiaoDichTK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QL_TKGG_MoSo.resx">
+      <DependentUpon>QL_TKGG_MoSo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QL_TKGG_TBDenHan.resx">
+      <DependentUpon>QL_TKGG_TBDenHan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TK_SoSoTK.resx">
+      <DependentUpon>TK_SoSoTK.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
