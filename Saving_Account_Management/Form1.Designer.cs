@@ -62,6 +62,7 @@ namespace Saving_Account_Management
             this.button42 = new System.Windows.Forms.Button();
             this.btn_QLNhomNguoiDung = new System.Windows.Forms.Button();
             this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.task_screen2 = new System.Windows.Forms.Panel();
             this.panel14 = new System.Windows.Forms.Panel();
             this.panel15 = new System.Windows.Forms.Panel();
             this.btn_DMLaiTietKiem = new System.Windows.Forms.Button();
@@ -70,18 +71,18 @@ namespace Saving_Account_Management
             this.btn_DMLoaiTien = new System.Windows.Forms.Button();
             this.button47 = new System.Windows.Forms.Button();
             this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.task_screen3 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
             this.btn_TKSoSoTK = new System.Windows.Forms.Button();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.task_screen4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.button7 = new System.Windows.Forms.Button();
             this.btn_CNThongTin = new System.Windows.Forms.Button();
-            this.task_screen2 = new System.Windows.Forms.Panel();
-            this.task_screen3 = new System.Windows.Forms.Panel();
-            this.task_screen4 = new System.Windows.Forms.Panel();
+            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.tabControl1.SuspendLayout();
             this.tabPage4.SuspendLayout();
             this.panel7.SuspendLayout();
@@ -655,6 +656,16 @@ namespace Saving_Account_Management
             this.tabPage5.Text = "QUẢN LÝ DANH MỤC";
             this.tabPage5.UseVisualStyleBackColor = true;
             // 
+            // task_screen2
+            // 
+            this.task_screen2.BackgroundImage = global::Saving_Account_Management.Properties.Resources.Bankimg;
+            this.task_screen2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.task_screen2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.task_screen2.Location = new System.Drawing.Point(3, 159);
+            this.task_screen2.Name = "task_screen2";
+            this.task_screen2.Size = new System.Drawing.Size(1880, 762);
+            this.task_screen2.TabIndex = 3;
+            // 
             // panel14
             // 
             this.panel14.BackColor = System.Drawing.Color.Transparent;
@@ -791,6 +802,16 @@ namespace Saving_Account_Management
             this.tabPage6.Text = "THỐNG KÊ";
             this.tabPage6.UseVisualStyleBackColor = true;
             // 
+            // task_screen3
+            // 
+            this.task_screen3.BackgroundImage = global::Saving_Account_Management.Properties.Resources.Bankimg;
+            this.task_screen3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.task_screen3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.task_screen3.Location = new System.Drawing.Point(3, 159);
+            this.task_screen3.Name = "task_screen3";
+            this.task_screen3.Size = new System.Drawing.Size(1880, 762);
+            this.task_screen3.TabIndex = 4;
+            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
@@ -861,6 +882,16 @@ namespace Saving_Account_Management
             this.tabPage1.Text = "CÁ NHÂN";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // task_screen4
+            // 
+            this.task_screen4.BackgroundImage = global::Saving_Account_Management.Properties.Resources.Bankimg;
+            this.task_screen4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.task_screen4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.task_screen4.Location = new System.Drawing.Point(3, 159);
+            this.task_screen4.Name = "task_screen4";
+            this.task_screen4.Size = new System.Drawing.Size(1880, 762);
+            this.task_screen4.TabIndex = 5;
+            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.Transparent;
@@ -919,35 +950,13 @@ namespace Saving_Account_Management
             this.btn_CNThongTin.UseVisualStyleBackColor = true;
             this.btn_CNThongTin.Click += new System.EventHandler(this.btn_CNThongTin_Click);
             // 
-            // task_screen2
+            // reportViewer1
             // 
-            this.task_screen2.BackgroundImage = global::Saving_Account_Management.Properties.Resources.Bankimg;
-            this.task_screen2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.task_screen2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.task_screen2.Location = new System.Drawing.Point(3, 159);
-            this.task_screen2.Name = "task_screen2";
-            this.task_screen2.Size = new System.Drawing.Size(1880, 762);
-            this.task_screen2.TabIndex = 3;
-            // 
-            // task_screen3
-            // 
-            this.task_screen3.BackgroundImage = global::Saving_Account_Management.Properties.Resources.Bankimg;
-            this.task_screen3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.task_screen3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.task_screen3.Location = new System.Drawing.Point(3, 159);
-            this.task_screen3.Name = "task_screen3";
-            this.task_screen3.Size = new System.Drawing.Size(1880, 762);
-            this.task_screen3.TabIndex = 4;
-            // 
-            // task_screen4
-            // 
-            this.task_screen4.BackgroundImage = global::Saving_Account_Management.Properties.Resources.Bankimg;
-            this.task_screen4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.task_screen4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.task_screen4.Location = new System.Drawing.Point(3, 159);
-            this.task_screen4.Name = "task_screen4";
-            this.task_screen4.Size = new System.Drawing.Size(1880, 762);
-            this.task_screen4.TabIndex = 5;
+            this.reportViewer1.Location = new System.Drawing.Point(0, 0);
+            this.reportViewer1.Name = "ReportViewer";
+            this.reportViewer1.ServerReport.BearerToken = null;
+            this.reportViewer1.Size = new System.Drawing.Size(396, 246);
+            this.reportViewer1.TabIndex = 0;
             // 
             // Form1
             // 
@@ -1037,6 +1046,7 @@ namespace Saving_Account_Management
         private System.Windows.Forms.Panel task_screen2;
         private System.Windows.Forms.Panel task_screen3;
         private System.Windows.Forms.Panel task_screen4;
+        private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
     }
 }
 
