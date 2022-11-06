@@ -62,6 +62,7 @@ namespace Saving_Account_Management
             this.Controls.Add(this.gb_DMLoaiGiaoDich);
             this.Name = "DM_LoaiGiaoDich";
             this.Text = "DM_LoaiGiaoDich";
+            this.Load += new System.EventHandler(this.DM_LoaiGiaoDich_Load);
             this.gb_DMLoaiGiaoDich.ResumeLayout(false);
             this.gb_DMLoaiGiaoDich.PerformLayout();
             this.ResumeLayout(false);

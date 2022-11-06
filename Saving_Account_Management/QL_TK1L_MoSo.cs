@@ -16,5 +16,30 @@ namespace Saving_Account_Management
         {
             InitializeComponent();
         }
+
+        private void label_MaKH_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label_chinhanh_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

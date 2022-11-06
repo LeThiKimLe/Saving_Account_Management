@@ -168,7 +168,7 @@ namespace Saving_Account_Management
         {
             task_screen.Controls.Remove(my_work);
             QL_TKGG_GiaoDichTK new_win = new QL_TKGG_GiaoDichTK();
-            my_work = new_win.gb_TKGG_GiaoDichTK;
+          my_work = new_win.gb_TKGG_GiaoDichTK;
             task_screen.Controls.Add(my_work);
             my_work.Dock = DockStyle.Fill;
             my_work.BringToFront();
