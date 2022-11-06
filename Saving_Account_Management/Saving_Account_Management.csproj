@@ -55,6 +55,7 @@
     <Compile Include="CN_ThongTin.Designer.cs">
       <DependentUpon>CN_ThongTin.cs</DependentUpon>
     </Compile>
+    <Compile Include="DB_Layer\DB_Connect.cs" />
     <Compile Include="DM_ChiNhanh.cs">
       <SubType>Form</SubType>
     </Compile>
