@@ -34,7 +34,7 @@ namespace Saving_Account_Management
             this.label10 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.ptbChuky = new System.Windows.Forms.PictureBox();
             this.cb_TinhTrangSD = new System.Windows.Forms.CheckBox();
             this.txt_DiaChi = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
@@ -69,10 +69,11 @@ namespace Saving_Account_Management
             this.NoiCap = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DiaChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cbDangSD = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.ChuKy = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gb_DSKhachHang.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_KhachHang)).BeginInit();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbChuky)).BeginInit();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -102,7 +103,8 @@ namespace Saving_Account_Management
             this.NgayCap,
             this.NoiCap,
             this.DiaChi,
-            this.cbDangSD});
+            this.cbDangSD,
+            this.ChuKy});
             this.dgv_KhachHang.Location = new System.Drawing.Point(31, 397);
             this.dgv_KhachHang.Name = "dgv_KhachHang";
             this.dgv_KhachHang.RowHeadersVisible = false;
@@ -120,7 +122,7 @@ namespace Saving_Account_Management
             this.label10.ForeColor = System.Drawing.Color.IndianRed;
             this.label10.Location = new System.Drawing.Point(393, 26);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(285, 33);
+            this.label10.Size = new System.Drawing.Size(301, 34);
             this.label10.TabIndex = 18;
             this.label10.Text = "THÔNG TIN KHÁCH HÀNG";
             // 
@@ -130,7 +132,7 @@ namespace Saving_Account_Management
             this.panel1.BackColor = System.Drawing.Color.Gainsboro;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.ptbChuky);
             this.panel1.Controls.Add(this.cb_TinhTrangSD);
             this.panel1.Controls.Add(this.txt_DiaChi);
             this.panel1.Controls.Add(this.label9);
@@ -162,18 +164,19 @@ namespace Saving_Account_Management
             this.label5.TabIndex = 20;
             this.label5.Text = "Chữ ký:";
             // 
-            // pictureBox1
+            // ptbChuky
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(586, 212);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(169, 107);
-            this.pictureBox1.TabIndex = 19;
-            this.pictureBox1.TabStop = false;
+            this.ptbChuky.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ptbChuky.Location = new System.Drawing.Point(676, 212);
+            this.ptbChuky.Name = "ptbChuky";
+            this.ptbChuky.Size = new System.Drawing.Size(246, 107);
+            this.ptbChuky.TabIndex = 19;
+            this.ptbChuky.TabStop = false;
             // 
             // cb_TinhTrangSD
             // 
             this.cb_TinhTrangSD.AutoSize = true;
-            this.cb_TinhTrangSD.Location = new System.Drawing.Point(782, 212);
+            this.cb_TinhTrangSD.Location = new System.Drawing.Point(509, 265);
             this.cb_TinhTrangSD.Name = "cb_TinhTrangSD";
             this.cb_TinhTrangSD.Size = new System.Drawing.Size(140, 27);
             this.cb_TinhTrangSD.TabIndex = 18;
@@ -332,7 +335,7 @@ namespace Saving_Account_Management
             this.label11.ForeColor = System.Drawing.Color.IndianRed;
             this.label11.Location = new System.Drawing.Point(256, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(263, 33);
+            this.label11.Size = new System.Drawing.Size(277, 34);
             this.label11.TabIndex = 19;
             this.label11.Text = "TÌM KIẾM KHÁCH HÀNG";
             // 
@@ -471,6 +474,15 @@ namespace Saving_Account_Management
             this.cbDangSD.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             this.cbDangSD.Width = 150;
             // 
+            // ChuKy
+            // 
+            this.ChuKy.DataPropertyName = "ChuKy";
+            this.ChuKy.HeaderText = "Chữ ký";
+            this.ChuKy.MinimumWidth = 6;
+            this.ChuKy.Name = "ChuKy";
+            this.ChuKy.Visible = false;
+            this.ChuKy.Width = 125;
+            // 
             // QL_DSKhachHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -485,7 +497,7 @@ namespace Saving_Account_Management
             ((System.ComponentModel.ISupportInitialize)(this.dgv_KhachHang)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbChuky)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.ResumeLayout(false);
@@ -523,7 +535,7 @@ namespace Saving_Account_Management
         private System.Windows.Forms.DataGridView dgv_KhachHang;
         private System.Windows.Forms.CheckBox cb_TinhTrangSD;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox ptbChuky;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaKhachHang;
         private System.Windows.Forms.DataGridViewTextBoxColumn HoTen;
         private System.Windows.Forms.DataGridViewTextBoxColumn NgaySinh;
@@ -533,5 +545,6 @@ namespace Saving_Account_Management
         private System.Windows.Forms.DataGridViewTextBoxColumn NoiCap;
         private System.Windows.Forms.DataGridViewTextBoxColumn DiaChi;
         private System.Windows.Forms.DataGridViewCheckBoxColumn cbDangSD;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ChuKy;
     }
 }
