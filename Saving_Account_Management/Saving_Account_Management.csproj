@@ -55,6 +55,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BS_Layer\BS_DSKhachHang.cs" />
     <Compile Include="CN_ThongTin.cs">
       <SubType>Form</SubType>
     </Compile>
