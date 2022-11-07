@@ -16,5 +16,11 @@ namespace Saving_Account_Management
         {
             InitializeComponent();
         }
+
+
+        private void dataGridView_ChiNhanh_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
