@@ -82,7 +82,6 @@ namespace Saving_Account_Management
             this.panel4 = new System.Windows.Forms.Panel();
             this.button7 = new System.Windows.Forms.Button();
             this.btn_CNThongTin = new System.Windows.Forms.Button();
-            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.tabControl1.SuspendLayout();
             this.tabPage4.SuspendLayout();
             this.panel7.SuspendLayout();
@@ -950,14 +949,6 @@ namespace Saving_Account_Management
             this.btn_CNThongTin.UseVisualStyleBackColor = true;
             this.btn_CNThongTin.Click += new System.EventHandler(this.btn_CNThongTin_Click);
             // 
-            // reportViewer1
-            // 
-            this.reportViewer1.Location = new System.Drawing.Point(0, 0);
-            this.reportViewer1.Name = "ReportViewer";
-            this.reportViewer1.ServerReport.BearerToken = null;
-            this.reportViewer1.Size = new System.Drawing.Size(396, 246);
-            this.reportViewer1.TabIndex = 0;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1046,7 +1037,6 @@ namespace Saving_Account_Management
         private System.Windows.Forms.Panel task_screen2;
         private System.Windows.Forms.Panel task_screen3;
         private System.Windows.Forms.Panel task_screen4;
-        private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
     }
 }
 
