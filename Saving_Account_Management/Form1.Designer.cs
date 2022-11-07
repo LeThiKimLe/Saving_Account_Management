@@ -948,11 +948,7 @@ namespace Saving_Account_Management
             this.btn_CNThongTin.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btn_CNThongTin.UseVisualStyleBackColor = true;
             this.btn_CNThongTin.Click += new System.EventHandler(this.btn_CNThongTin_Click);
-            // 
-            // reportViewer1
-            // 
-           
-            // 
+               
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1040,8 +1036,7 @@ namespace Saving_Account_Management
         private System.Windows.Forms.Panel task_screen;
         private System.Windows.Forms.Panel task_screen2;
         private System.Windows.Forms.Panel task_screen3;
-        private System.Windows.Forms.Panel task_screen4;
-        
+       private System.Windows.Forms.Panel task_screen4;
     }
 }
 
