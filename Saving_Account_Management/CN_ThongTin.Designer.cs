@@ -37,6 +37,7 @@ namespace Saving_Account_Management
             // gb_CNThongTin
             // 
             this.gb_CNThongTin.Controls.Add(this.label1);
+            this.gb_CNThongTin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gb_CNThongTin.Location = new System.Drawing.Point(12, 12);
             this.gb_CNThongTin.Name = "gb_CNThongTin";
             this.gb_CNThongTin.Size = new System.Drawing.Size(1880, 762);
@@ -47,12 +48,11 @@ namespace Saving_Account_Management
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(367, 251);
+            this.label1.Location = new System.Drawing.Point(69, 70);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(643, 29);
+            this.label1.Size = new System.Drawing.Size(103, 25);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Hiển thị các thông tin của nhân viên đang sử dụng ứng dụng";
+            this.label1.Text = "Họ và Tên";
             // 
             // CN_ThongTin
             // 
@@ -69,7 +69,7 @@ namespace Saving_Account_Management
         }
 
         #endregion
-        private System.Windows.Forms.Label label1;
         public System.Windows.Forms.GroupBox gb_CNThongTin;
+        private System.Windows.Forms.Label label1;
     }
 }

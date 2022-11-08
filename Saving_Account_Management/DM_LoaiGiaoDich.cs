@@ -16,5 +16,10 @@ namespace Saving_Account_Management
         {
             InitializeComponent();
         }
+
+        private void DM_LoaiGiaoDich_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

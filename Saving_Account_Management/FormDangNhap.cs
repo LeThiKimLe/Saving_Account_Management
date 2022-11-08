@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Saving_Account_Management
 {
-    public partial class QL_TKGG_MoSo : Form
+    public partial class FormDangNhap : Form
     {
-        public QL_TKGG_MoSo()
+        public FormDangNhap()
         {
             InitializeComponent();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

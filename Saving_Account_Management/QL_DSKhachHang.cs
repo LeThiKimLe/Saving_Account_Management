@@ -7,11 +7,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data;
+using System.Data.SqlClient;
+
+using Saving_Account_Management.BS_Layer;
+using System.IO;
 
 namespace Saving_Account_Management
 {
     public partial class QL_DSKhachHang : Form
     {
+        private BS_DSKhachHang action = new BS_DSKhachHang();
         public QL_DSKhachHang()
         {
             InitializeComponent();
@@ -19,12 +25,9 @@ namespace Saving_Account_Management
 
         }
 
-        DB_Connect conn = new DB_Connect();
         private void Load_Data()
         {
-            conn.myConnect();
-            string sql = "SELECT MaKhachHang,HoTen,NgaySinh,SDT,MaDinhDanh,NgayCap,NoiCap,DiaChi,DangSuDung FROM KHACH_HANG ";
-            dgv_KhachHang.DataSource = conn.ExecuteQueryDataSet(sql, CommandType.Text).Tables[0];
+            dgv_KhachHang.DataSource = action.LayDanhSachKhachHang().Tables[0];
             disable();
             rdb_TimKiemMa.Enabled = true;
         }
@@ -83,6 +86,7 @@ namespace Saving_Account_Management
             {
                 cb_TinhTrangSD.Checked = false;
             }
+            this.ptbChuky.BackgroundImage = Image.FromStream(new MemoryStream((byte[])dgv_KhachHang.Rows[r].Cells[9].Value));
         }
 
 
