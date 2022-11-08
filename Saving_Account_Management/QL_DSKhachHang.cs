@@ -30,7 +30,9 @@ namespace Saving_Account_Management
         private void Load_Data()
         {
             conn.myConnect();
-            string sql = "SELECT MaKhachHang,HoTen,NgaySinh,SDT,MaDinhDanh,NgayCap,NoiCap,DiaChi,DangSuDung FROM KHACH_HANG ";
+            //string sql = "SELECT MaKhachHang,HoTen,NgaySinh,SDT,MaDinhDanh,NgayCap,NoiCap,DiaChi,DangSuDung FROM KHACH_HANG ";
+            string sql = "SELECT * FROM KHACH_HANG ";
+
             dgv_KhachHang.DataSource = conn.ExecuteQueryDataSet(sql, CommandType.Text).Tables[0];
             disable();
             rdb_TimKiemMa.Enabled = true;
