@@ -11,29 +11,8 @@ namespace Saving_Account_Management.DB_Layer
     public class DB_Connect
     {
 
-        public void myConnect()
-        {
-            Conn.Open();
-        }
-        //combobox sự kiện selectindexchange
-        public void myClose()
-        {
-            Conn.Close();
-        }
-
-        public DataTable createTable(string sql)
-        {
-            DataTable dt = new DataTable();
-            SqlDataAdapter ds = new SqlDataAdapter(sql, Conn);
-            ds.Fill(dt);
-            return dt;
-        }
-
-
-
-
-
-        public SqlConnection Conn = new SqlConnection("Data Source=tcp:DESKTOP-SH243I1;Initial Catalog=QUANLYTAIKHOANTIETKIEM;User ID=sa;Password=Conchosu@1");
+        //public SqlConnection Conn = new SqlConnection("Data Source=tcp:DESKTOP-SH243I1;Initial Catalog=QUANLYTAIKHOANTIETKIEM;User ID=sa;Password=Conchosu@1");
+        public SqlConnection Conn = new SqlConnection("Data Source=.;Initial Catalog=QUANLYTAIKHOANTIETKIEM;Integrated Security=True");
 
         public void myConnect()
         {
@@ -58,7 +37,9 @@ namespace Saving_Account_Management.DB_Layer
         string connectString;
         public DB_Connect()
         {
-            connectString = "Data Source=tcp:DESKTOP-SH243I1;Initial Catalog=QUANLYTAIKHOANTIETKIEM;User ID=sa;Password=Conchosu@1";
+            //connectString = "Data Source=tcp:DESKTOP-SH243I1;Initial Catalog=QUANLYTAIKHOANTIETKIEM;User ID=sa;Password=Conchosu@1";
+            connectString = "Data Source=.;Initial Catalog=QUANLYTAIKHOANTIETKIEM;Integrated Security=True";
+
             link = new SqlConnection(connectString);
             comm = link.CreateCommand();
         }
