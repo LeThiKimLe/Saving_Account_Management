@@ -242,6 +242,7 @@ namespace Saving_Account_Management
             task_screen2.Controls.Add(my_work);
             my_work.Dock = DockStyle.Fill;
             my_work.BringToFront();
+        
         }
 
         private void btn_TKSoSoTK_Click(object sender, EventArgs e)

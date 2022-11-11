@@ -55,6 +55,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BS_Layer\BS_DMChiNhanh.cs" />
+    <Compile Include="BS_Layer\BS_DMLoaiGD.cs" />
+    <Compile Include="BS_Layer\BS_DMLoaiTien.cs" />
+    <Compile Include="BS_Layer\BS_DMLoaiTietKiem.cs" />
     <Compile Include="BS_Layer\BS_DSKhachHang.cs" />
     <Compile Include="CN_ThongTin.cs">
       <SubType>Form</SubType>

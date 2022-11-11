@@ -21,7 +21,6 @@ namespace Saving_Account_Management.BS_Layer
         public DataSet LayDanhSachKhachHang()
         {
             db.new_comm();
-            //string sql = "SELECT MaKhachHang,HoTen,NgaySinh,SDT,MaDinhDanh,NgayCap,NoiCap,DiaChi,DangSuDung FROM KHACH_HANG ";
             string sql = "SELECT * FROM KHACH_HANG ";
             return db.ExecuteQueryDataSet(sql, CommandType.Text);
         }
