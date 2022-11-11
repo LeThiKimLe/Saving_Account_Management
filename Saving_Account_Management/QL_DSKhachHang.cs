@@ -84,6 +84,8 @@ namespace Saving_Account_Management
             this.txt_MaDinhDanh.Text = dgv_KhachHang.Rows[r].Cells[5].Value.ToString();
             this.txt_NgayCap.Text = dgv_KhachHang.Rows[r].Cells[6].Value.ToString();
             this.txt_NoiCap.Text = dgv_KhachHang.Rows[r].Cells[7].Value.ToString();
+            this.ptbChuky.BackgroundImage = Image.FromStream(new MemoryStream((byte[])dgv_KhachHang.Rows[r].Cells[9].Value));
+
             if ((bool)dgv_KhachHang.Rows[r].Cells[8].Value == true)
             {
                 cb_TinhTrangSD.Checked = true;
