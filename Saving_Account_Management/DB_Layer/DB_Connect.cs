@@ -12,25 +12,8 @@ namespace Saving_Account_Management.DB_Layer
     {
 
         //public SqlConnection Conn = new SqlConnection("Data Source=tcp:DESKTOP-SH243I1;Initial Catalog=QUANLYTAIKHOANTIETKIEM;User ID=sa;Password=Conchosu@1");
-        public SqlConnection Conn = new SqlConnection("Data Source=.;Initial Catalog=QUANLYTAIKHOANTk;Integrated Security=True");
+        public SqlConnection Conn = new SqlConnection("Data Source=.;Initial Catalog=QUANLYTAIKHOANTIETKIEMNGANHANG;Integrated Security=True");
 
-        public void myConnect()
-        {
-            Conn.Open();
-        }
-        //combobox sự kiện selectindexchange
-        public void myClose()
-        {
-            Conn.Close();
-        }
-
-        public DataTable createTable(string sql)
-        {
-            DataTable dt = new DataTable();
-            SqlDataAdapter ds = new SqlDataAdapter(sql, Conn);
-            ds.Fill(dt);
-            return dt;
-        }
         SqlConnection link = null;
         public SqlCommand comm = null;
         SqlDataAdapter da = null;
@@ -38,7 +21,7 @@ namespace Saving_Account_Management.DB_Layer
         public DB_Connect()
         {
             //connectString = "Data Source=tcp:DESKTOP-SH243I1;Initial Catalog=QUANLYTAIKHOANTIETKIEM;User ID=sa;Password=Conchosu@1";
-            connectString = "Data Source=.;Initial Catalog=QUANLYTAIKHOANTk;Integrated Security=True";
+            connectString = "Data Source=.;Initial Catalog=QUANLYTAIKHOANTIETKIEMNGANHANG;Integrated Security=True";
 
             link = new SqlConnection(connectString);
             comm = link.CreateCommand();
@@ -50,13 +33,14 @@ namespace Saving_Account_Management.DB_Layer
 
         }
 
-        public DataSet ExecuteQueryDataSet(string strSQL, CommandType ct)
+        public DataSet ExecuteQueryDataSet(string strSQL, CommandType ct, params SqlParameter[] sqlParameters)
         {
             if (link.State == ConnectionState.Open)
                 link.Close();
             link.Open();
             comm.CommandText = strSQL;
             comm.CommandType = ct;
+            comm.Parameters.AddRange(sqlParameters);
             da = new SqlDataAdapter(comm);
             DataSet ds = new DataSet();
             da.Fill(ds);

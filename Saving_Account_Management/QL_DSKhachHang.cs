@@ -1,17 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data;
-using System.Data.SqlClient;
 
 using Saving_Account_Management.BS_Layer;
-using Saving_Account_Management.DB_Layer;
 using System.IO;
 
 namespace Saving_Account_Management
@@ -22,20 +14,58 @@ namespace Saving_Account_Management
         public QL_DSKhachHang()
         {
             InitializeComponent();
-                Load_Data();
+            Load_Data();
+        }
+        private void Load_Data()
+        {
+            dgv_KhachHang.DataSource = action.LayDanhSachKhachHang().Tables[0];
+            disable();
+            rdb_TimKiemMa.Checked = true;
+        }
+
+        private void txt_TimKiem_TextChanged(object sender, EventArgs e)
+        {
+            DataSet ds = new DataSet();
+            if (rdb_TimKiemMa.Checked == true)
+            {
+                ds = action.TimKiem("MaKhachHang", txt_TimKiem.Text);
+            }
+            else if (rdb_TimKiemTen.Checked == true)
+            {
+                ds = action.TimKiem("HoTen", txt_TimKiem.Text);
+            }
+            else
+            {
+                ds = action.TimKiem("MaDinhDanh", txt_TimKiem.Text);
+            }
+            dgv_KhachHang.DataSource = ds.Tables[0];
+            dgv_KhachHang.AutoResizeColumns();
 
         }
 
-        DB_Connect conn = new DB_Connect();
-        private void Load_Data()
+        private void dgv_KhachHang_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            conn.myConnect();
-            //string sql = "SELECT MaKhachHang,HoTen,NgaySinh,SDT,MaDinhDanh,NgayCap,NoiCap,DiaChi,DangSuDung FROM KHACH_HANG ";
-            string sql = "SELECT * FROM KHACH_HANG ";
+            // Thứ tự dòng hiện hành
+            int r = dgv_KhachHang.CurrentCell.RowIndex;
+            // Chuyển thông tin lên panel
+            this.txt_MaKH.Text = dgv_KhachHang.Rows[r].Cells[0].Value.ToString();
+            this.txt_HoTen.Text = dgv_KhachHang.Rows[r].Cells[1].Value.ToString();
+            this.txt_NgaySinh.Text = dgv_KhachHang.Rows[r].Cells[2].Value.ToString();
+            this.txt_Sdt.Text = dgv_KhachHang.Rows[r].Cells[3].Value.ToString();
+            this.txt_MaDinhDanh.Text = dgv_KhachHang.Rows[r].Cells[4].Value.ToString();
+            this.txt_NgayCap.Text = dgv_KhachHang.Rows[r].Cells[5].Value.ToString();
+            this.txt_NoiCap.Text = dgv_KhachHang.Rows[r].Cells[6].Value.ToString();
+            this.txt_DiaChi.Text = dgv_KhachHang.Rows[r].Cells[7].Value.ToString();
+            this.ptbChuky.BackgroundImage = Image.FromStream(new MemoryStream((byte[])dgv_KhachHang.Rows[r].Cells[9].Value));
 
-            dgv_KhachHang.DataSource = conn.ExecuteQueryDataSet(sql, CommandType.Text).Tables[0];
-            disable();
-            rdb_TimKiemMa.Enabled = true;
+            if ((bool)dgv_KhachHang.Rows[r].Cells[8].Value == true)
+            {
+                cb_TinhTrangSD.Checked = true;
+            }
+            else
+            {
+                cb_TinhTrangSD.Checked = false;
+            }
         }
 
         private void disable()
@@ -50,53 +80,6 @@ namespace Saving_Account_Management
             this.txt_NoiCap.Enabled = false;
         }
 
-        private void btn_TimKiem_Click(object sender, EventArgs e)
-        {
-            if (rdb_TimKiemMa.Checked == true)
-            {
 
-            }
-            else if (rdb_TimKiemTen.Checked == true)
-            {
-
-            }
-            else
-            {
-                
-            }
-        }
-
-        private void QL_DSKhachHang_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dgv_KhachHang_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            // Thứ tự dòng hiện hành
-            int r = dgv_KhachHang.CurrentCell.RowIndex;
-            // Chuyển thông tin lên panel
-            this.txt_MaKH.Text = dgv_KhachHang.Rows[r].Cells[0].Value.ToString();
-            this.txt_HoTen.Text = dgv_KhachHang.Rows[r].Cells[1].Value.ToString();
-            this.txt_NgaySinh.Text = dgv_KhachHang.Rows[r].Cells[2].Value.ToString();
-            this.txt_Sdt.Text = dgv_KhachHang.Rows[r].Cells[3].Value.ToString();
-            this.txt_DiaChi.Text = dgv_KhachHang.Rows[r].Cells[4].Value.ToString();
-            this.txt_MaDinhDanh.Text = dgv_KhachHang.Rows[r].Cells[5].Value.ToString();
-            this.txt_NgayCap.Text = dgv_KhachHang.Rows[r].Cells[6].Value.ToString();
-            this.txt_NoiCap.Text = dgv_KhachHang.Rows[r].Cells[7].Value.ToString();
-            this.ptbChuky.BackgroundImage = Image.FromStream(new MemoryStream((byte[])dgv_KhachHang.Rows[r].Cells[9].Value));
-
-            if ((bool)dgv_KhachHang.Rows[r].Cells[8].Value == true)
-            {
-                cb_TinhTrangSD.Checked = true;
-            }
-            else
-            {
-                cb_TinhTrangSD.Checked = false;
-            }
-        }
-
-        
     }
-
 }
