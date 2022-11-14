@@ -1,12 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Data.SqlClient;
+﻿using System.Data.SqlClient;
 using System.Data;
-using System.Windows.Forms;
-
 using Saving_Account_Management.DB_Layer;
 
 namespace Saving_Account_Management.BS_Layer

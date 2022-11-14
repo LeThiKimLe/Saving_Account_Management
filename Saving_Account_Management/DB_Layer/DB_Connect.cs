@@ -10,10 +10,6 @@ namespace Saving_Account_Management.DB_Layer
 {
     public class DB_Connect
     {
-
-        //public SqlConnection Conn = new SqlConnection("Data Source=tcp:DESKTOP-SH243I1;Initial Catalog=QUANLYTAIKHOANTIETKIEM;User ID=sa;Password=Conchosu@1");
-        public SqlConnection Conn = new SqlConnection("Data Source=.;Initial Catalog=QUANLYTAIKHOANTIETKIEMNGANHANG;Integrated Security=True");
-
         SqlConnection link = null;
         public SqlCommand comm = null;
         SqlDataAdapter da = null;
@@ -22,7 +18,6 @@ namespace Saving_Account_Management.DB_Layer
         {
             //connectString = "Data Source=tcp:DESKTOP-SH243I1;Initial Catalog=QUANLYTAIKHOANTIETKIEM;User ID=sa;Password=Conchosu@1";
             connectString = "Data Source=.;Initial Catalog=QUANLYTAIKHOANTIETKIEMNGANHANG;Integrated Security=True";
-
             link = new SqlConnection(connectString);
             comm = link.CreateCommand();
         }
@@ -82,5 +77,6 @@ namespace Saving_Account_Management.DB_Layer
             }
             return f;
         }
+
     }
 }
