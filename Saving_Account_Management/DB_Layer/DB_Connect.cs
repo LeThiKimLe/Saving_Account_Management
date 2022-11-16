@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Data;
+﻿using System.Data;
 using System.Data.SqlClient;
 
 namespace Saving_Account_Management.DB_Layer
@@ -25,7 +20,6 @@ namespace Saving_Account_Management.DB_Layer
         public void new_comm()
         {
             comm = link.CreateCommand();
-
         }
 
         public DataSet ExecuteQueryDataSet(string strSQL, CommandType ct, params SqlParameter[] sqlParameters)
@@ -69,7 +63,7 @@ namespace Saving_Account_Management.DB_Layer
             }
             catch (SqlException ex)
             {
-                error = ex.Message;
+                error = ex.Errors[0].Message;
             }
             finally
             {

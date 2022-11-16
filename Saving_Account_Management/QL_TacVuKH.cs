@@ -3,7 +3,10 @@ using System.Data;
 using System.Drawing;
 using System.Windows.Forms;
 using Saving_Account_Management.BS_Layer;
+using Saving_Account_Management.UserControl.TextBoxs;
 using System.IO;
+using Saving_Account_Management.Extensions;
+using System.Linq;
 
 namespace Saving_Account_Management
 {
@@ -18,8 +21,25 @@ namespace Saving_Account_Management
 
         private void btn_Luu_Click(object sender, EventArgs e)
         {
+            foreach (var ctl in this.pnSuaThongTinKhachHang.GetAllChildControl().OrderBy(u => u.TabIndex))
+            {
+                if (ctl is TextBoxValidationBase)
+                {
+                    var textBox = ctl as TextBoxValidationBase;
+                    try
+                    {
+                        textBox.Validate(true);
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                    }
+                }
+            }
+
             //truyền dữ liệu từ txtSua
-            if(!File.Exists(openFileDialogChuKy.FileName))
+            if (!File.Exists(openFileDialogChuKy.FileName))
             {
                 openFileDialogChuKy.FileName = "";
             }

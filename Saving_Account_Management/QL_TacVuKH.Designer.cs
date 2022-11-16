@@ -33,24 +33,19 @@ namespace Saving_Account_Management
             this.btn_TimKiem = new System.Windows.Forms.Button();
             this.txt_TimKiem = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.pnSuaThongTinKhachHang = new System.Windows.Forms.Panel();
             this.dt_NgayCap = new System.Windows.Forms.DateTimePicker();
             this.dt_NgaySinh = new System.Windows.Forms.DateTimePicker();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.ptbS_ChuKy = new System.Windows.Forms.PictureBox();
             this.cbS_TinhTrangSD = new System.Windows.Forms.CheckBox();
-            this.txtS_DiaChi = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.txtS_NoiCap = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
-            this.txtS_MaDinhDanh = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
-            this.txtS_Sdt = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
-            this.txtS_HoTen = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
             this.txtS_MaKH = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
@@ -77,8 +72,13 @@ namespace Saving_Account_Management
             this.txt_MaKH = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.openFileDialogChuKy = new System.Windows.Forms.OpenFileDialog();
+            this.txtS_HoTen = new Saving_Account_Management.UserControl.TextBoxs.TextBoxHoTen();
+            this.txtS_Sdt = new Saving_Account_Management.UserControl.TextBoxs.TextBoxSoDienThoai();
+            this.txtS_DiaChi = new Saving_Account_Management.UserControl.TextBoxs.TextBoxDiaChi();
+            this.txtS_MaDinhDanh = new Saving_Account_Management.UserControl.TextBoxs.TextBoxMaDinhDanh();
+            this.txtS_NoiCap = new Saving_Account_Management.UserControl.TextBoxs.TextBoxNoiCap();
             this.gb_TacVuKH.SuspendLayout();
-            this.panel2.SuspendLayout();
+            this.pnSuaThongTinKhachHang.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbS_ChuKy)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_Chuky)).BeginInit();
@@ -89,7 +89,7 @@ namespace Saving_Account_Management
             this.gb_TacVuKH.Controls.Add(this.btn_TimKiem);
             this.gb_TacVuKH.Controls.Add(this.txt_TimKiem);
             this.gb_TacVuKH.Controls.Add(this.label21);
-            this.gb_TacVuKH.Controls.Add(this.panel2);
+            this.gb_TacVuKH.Controls.Add(this.pnSuaThongTinKhachHang);
             this.gb_TacVuKH.Controls.Add(this.btn_Luu);
             this.gb_TacVuKH.Controls.Add(this.panel1);
             this.gb_TacVuKH.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -137,36 +137,36 @@ namespace Saving_Account_Management
             this.label21.TabIndex = 25;
             this.label21.Text = "Tìm kiếm theo mã định danh:";
             // 
-            // panel2
+            // pnSuaThongTinKhachHang
             // 
-            this.panel2.AutoSize = true;
-            this.panel2.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel2.Controls.Add(this.dt_NgayCap);
-            this.panel2.Controls.Add(this.dt_NgaySinh);
-            this.panel2.Controls.Add(this.label11);
-            this.panel2.Controls.Add(this.label12);
-            this.panel2.Controls.Add(this.ptbS_ChuKy);
-            this.panel2.Controls.Add(this.cbS_TinhTrangSD);
-            this.panel2.Controls.Add(this.txtS_DiaChi);
-            this.panel2.Controls.Add(this.label13);
-            this.panel2.Controls.Add(this.txtS_NoiCap);
-            this.panel2.Controls.Add(this.label14);
-            this.panel2.Controls.Add(this.label15);
-            this.panel2.Controls.Add(this.txtS_MaDinhDanh);
-            this.panel2.Controls.Add(this.label16);
-            this.panel2.Controls.Add(this.txtS_Sdt);
-            this.panel2.Controls.Add(this.label17);
-            this.panel2.Controls.Add(this.label18);
-            this.panel2.Controls.Add(this.txtS_HoTen);
-            this.panel2.Controls.Add(this.label19);
-            this.panel2.Controls.Add(this.txtS_MaKH);
-            this.panel2.Controls.Add(this.label20);
-            this.panel2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel2.Location = new System.Drawing.Point(995, 167);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(904, 513);
-            this.panel2.TabIndex = 24;
+            this.pnSuaThongTinKhachHang.AutoSize = true;
+            this.pnSuaThongTinKhachHang.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.pnSuaThongTinKhachHang.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pnSuaThongTinKhachHang.Controls.Add(this.txtS_NoiCap);
+            this.pnSuaThongTinKhachHang.Controls.Add(this.txtS_MaDinhDanh);
+            this.pnSuaThongTinKhachHang.Controls.Add(this.txtS_DiaChi);
+            this.pnSuaThongTinKhachHang.Controls.Add(this.txtS_Sdt);
+            this.pnSuaThongTinKhachHang.Controls.Add(this.txtS_HoTen);
+            this.pnSuaThongTinKhachHang.Controls.Add(this.dt_NgayCap);
+            this.pnSuaThongTinKhachHang.Controls.Add(this.dt_NgaySinh);
+            this.pnSuaThongTinKhachHang.Controls.Add(this.label11);
+            this.pnSuaThongTinKhachHang.Controls.Add(this.label12);
+            this.pnSuaThongTinKhachHang.Controls.Add(this.ptbS_ChuKy);
+            this.pnSuaThongTinKhachHang.Controls.Add(this.cbS_TinhTrangSD);
+            this.pnSuaThongTinKhachHang.Controls.Add(this.label13);
+            this.pnSuaThongTinKhachHang.Controls.Add(this.label14);
+            this.pnSuaThongTinKhachHang.Controls.Add(this.label15);
+            this.pnSuaThongTinKhachHang.Controls.Add(this.label16);
+            this.pnSuaThongTinKhachHang.Controls.Add(this.label17);
+            this.pnSuaThongTinKhachHang.Controls.Add(this.label18);
+            this.pnSuaThongTinKhachHang.Controls.Add(this.label19);
+            this.pnSuaThongTinKhachHang.Controls.Add(this.txtS_MaKH);
+            this.pnSuaThongTinKhachHang.Controls.Add(this.label20);
+            this.pnSuaThongTinKhachHang.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pnSuaThongTinKhachHang.Location = new System.Drawing.Point(995, 167);
+            this.pnSuaThongTinKhachHang.Name = "pnSuaThongTinKhachHang";
+            this.pnSuaThongTinKhachHang.Size = new System.Drawing.Size(904, 513);
+            this.pnSuaThongTinKhachHang.TabIndex = 24;
             // 
             // dt_NgayCap
             // 
@@ -226,13 +226,6 @@ namespace Saving_Account_Management
             this.cbS_TinhTrangSD.Text = "Đang sử dụng";
             this.cbS_TinhTrangSD.UseVisualStyleBackColor = true;
             // 
-            // txtS_DiaChi
-            // 
-            this.txtS_DiaChi.Location = new System.Drawing.Point(196, 351);
-            this.txtS_DiaChi.Name = "txtS_DiaChi";
-            this.txtS_DiaChi.Size = new System.Drawing.Size(211, 34);
-            this.txtS_DiaChi.TabIndex = 5;
-            // 
             // label13
             // 
             this.label13.AutoSize = true;
@@ -241,14 +234,6 @@ namespace Saving_Account_Management
             this.label13.Size = new System.Drawing.Size(75, 28);
             this.label13.TabIndex = 16;
             this.label13.Text = "Địa chỉ:";
-            // 
-            // txtS_NoiCap
-            // 
-            this.txtS_NoiCap.Location = new System.Drawing.Point(619, 227);
-            this.txtS_NoiCap.Name = "txtS_NoiCap";
-            this.txtS_NoiCap.Size = new System.Drawing.Size(232, 34);
-            this.txtS_NoiCap.TabIndex = 8;
-            this.txtS_NoiCap.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtS_NoiCap_KeyDown);
             // 
             // label14
             // 
@@ -268,13 +253,6 @@ namespace Saving_Account_Management
             this.label15.TabIndex = 10;
             this.label15.Text = "Ngày cấp: ";
             // 
-            // txtS_MaDinhDanh
-            // 
-            this.txtS_MaDinhDanh.Location = new System.Drawing.Point(619, 104);
-            this.txtS_MaDinhDanh.Name = "txtS_MaDinhDanh";
-            this.txtS_MaDinhDanh.Size = new System.Drawing.Size(232, 34);
-            this.txtS_MaDinhDanh.TabIndex = 6;
-            // 
             // label16
             // 
             this.label16.AutoSize = true;
@@ -283,13 +261,6 @@ namespace Saving_Account_Management
             this.label16.Size = new System.Drawing.Size(137, 28);
             this.label16.TabIndex = 8;
             this.label16.Text = "Mã định danh:";
-            // 
-            // txtS_Sdt
-            // 
-            this.txtS_Sdt.Location = new System.Drawing.Point(196, 292);
-            this.txtS_Sdt.Name = "txtS_Sdt";
-            this.txtS_Sdt.Size = new System.Drawing.Size(211, 34);
-            this.txtS_Sdt.TabIndex = 4;
             // 
             // label17
             // 
@@ -308,13 +279,6 @@ namespace Saving_Account_Management
             this.label18.Size = new System.Drawing.Size(103, 28);
             this.label18.TabIndex = 4;
             this.label18.Text = "Ngày sinh:";
-            // 
-            // txtS_HoTen
-            // 
-            this.txtS_HoTen.Location = new System.Drawing.Point(196, 163);
-            this.txtS_HoTen.Name = "txtS_HoTen";
-            this.txtS_HoTen.Size = new System.Drawing.Size(211, 34);
-            this.txtS_HoTen.TabIndex = 2;
             // 
             // label19
             // 
@@ -556,6 +520,41 @@ namespace Saving_Account_Management
             // 
             this.openFileDialogChuKy.FileName = "openFileDialog1";
             // 
+            // txtS_HoTen
+            // 
+            this.txtS_HoTen.Location = new System.Drawing.Point(196, 163);
+            this.txtS_HoTen.Name = "txtS_HoTen";
+            this.txtS_HoTen.Size = new System.Drawing.Size(211, 34);
+            this.txtS_HoTen.TabIndex = 21;
+            // 
+            // txtS_Sdt
+            // 
+            this.txtS_Sdt.Location = new System.Drawing.Point(196, 292);
+            this.txtS_Sdt.Name = "txtS_Sdt";
+            this.txtS_Sdt.Size = new System.Drawing.Size(211, 34);
+            this.txtS_Sdt.TabIndex = 22;
+            // 
+            // txtS_DiaChi
+            // 
+            this.txtS_DiaChi.Location = new System.Drawing.Point(196, 348);
+            this.txtS_DiaChi.Name = "txtS_DiaChi";
+            this.txtS_DiaChi.Size = new System.Drawing.Size(211, 34);
+            this.txtS_DiaChi.TabIndex = 23;
+            // 
+            // txtS_MaDinhDanh
+            // 
+            this.txtS_MaDinhDanh.Location = new System.Drawing.Point(619, 104);
+            this.txtS_MaDinhDanh.Name = "txtS_MaDinhDanh";
+            this.txtS_MaDinhDanh.Size = new System.Drawing.Size(232, 34);
+            this.txtS_MaDinhDanh.TabIndex = 24;
+            // 
+            // txtS_NoiCap
+            // 
+            this.txtS_NoiCap.Location = new System.Drawing.Point(619, 230);
+            this.txtS_NoiCap.Name = "txtS_NoiCap";
+            this.txtS_NoiCap.Size = new System.Drawing.Size(232, 34);
+            this.txtS_NoiCap.TabIndex = 25;
+            // 
             // QL_TacVuKH
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -567,8 +566,8 @@ namespace Saving_Account_Management
             this.Text = "QL_TacVuKH";
             this.gb_TacVuKH.ResumeLayout(false);
             this.gb_TacVuKH.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            this.pnSuaThongTinKhachHang.ResumeLayout(false);
+            this.pnSuaThongTinKhachHang.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbS_ChuKy)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -602,22 +601,17 @@ namespace Saving_Account_Management
         private System.Windows.Forms.TextBox txt_MaKH;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btn_Luu;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel pnSuaThongTinKhachHang;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.PictureBox ptbS_ChuKy;
         private System.Windows.Forms.CheckBox cbS_TinhTrangSD;
-        private System.Windows.Forms.TextBox txtS_DiaChi;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox txtS_NoiCap;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TextBox txtS_MaDinhDanh;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.TextBox txtS_Sdt;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.TextBox txtS_HoTen;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.TextBox txtS_MaKH;
         private System.Windows.Forms.Label label20;
@@ -627,5 +621,10 @@ namespace Saving_Account_Management
         private System.Windows.Forms.TextBox txt_TimKiem;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Button btn_TimKiem;
+        private UserControl.TextBoxs.TextBoxNoiCap txtS_NoiCap;
+        private UserControl.TextBoxs.TextBoxMaDinhDanh txtS_MaDinhDanh;
+        private UserControl.TextBoxs.TextBoxDiaChi txtS_DiaChi;
+        private UserControl.TextBoxs.TextBoxSoDienThoai txtS_Sdt;
+        private UserControl.TextBoxs.TextBoxHoTen txtS_HoTen;
     }
 }

@@ -46,8 +46,7 @@ namespace Saving_Account_Management
             // Thứ tự dòng hiện hành
             int r = dgv_SoTK.CurrentCell.RowIndex;
             string maSoTK = dgv_SoTK.Rows[r].Cells[0].Value.ToString();
-            dgv_SoHuu.Refresh();
-            dgv_SoHuu.DataSource = action.LayDanhChuSoHuu(maSoTK).Tables[0];
+            dgv_SoHuu.DataSource = action.LayDanhSachChuSoHuu(maSoTK).Tables[0];
 
             string[] tenCotSoHuu = new string[3] {
                 "Mã khách hàng", "Họ tên", "Mã định danh"
@@ -61,6 +60,7 @@ namespace Saving_Account_Management
         #region tìm kiếm mã sổ và chủ sở hữu trên textbox
         private void txt_TKSoHuu_TextChanged(object sender, EventArgs e)
         {
+            txt_TKMaSo.Clear();
             DataSet ds = new DataSet();
             ds = action.TimKiemSoHuu(txt_TKSoHuu.Text);
 
@@ -70,7 +70,7 @@ namespace Saving_Account_Management
 
         private void txt_TKMaSo_TextChanged(object sender, EventArgs e)
         {
-            dgv_SoTK.DataBindings.Clear();
+            txt_TKSoHuu.Clear();
             DataSet ds = new DataSet();
             ds = action.TimKiemMaSoTK(txt_TKMaSo.Text);
 
