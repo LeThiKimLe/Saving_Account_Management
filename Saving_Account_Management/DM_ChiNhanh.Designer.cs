@@ -92,7 +92,7 @@ namespace Saving_Account_Management
             this.dataGridView_ChiNhanh.Location = new System.Drawing.Point(17, 34);
             this.dataGridView_ChiNhanh.Name = "dataGridView_ChiNhanh";
             this.dataGridView_ChiNhanh.RowHeadersVisible = false;
-            this.dataGridView_ChiNhanh.Size = new System.Drawing.Size(941, 397);
+            this.dataGridView_ChiNhanh.Size = new System.Drawing.Size(940, 397);
             this.dataGridView_ChiNhanh.TabIndex = 1;
             this.dataGridView_ChiNhanh.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_ChiNhanh_CellClick_1);
             // 
@@ -120,7 +120,7 @@ namespace Saving_Account_Management
             // 
             // Col_SLNV
             // 
-            this.Col_SLNV.DataPropertyName = "SoLuongNV";
+            this.Col_SLNV.DataPropertyName = "SoLuong";
             this.Col_SLNV.HeaderText = "Số Lượng Nhân Viên";
             this.Col_SLNV.Name = "Col_SLNV";
             this.Col_SLNV.Width = 170;

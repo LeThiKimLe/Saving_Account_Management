@@ -55,11 +55,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BS_Layer\BS_DMChiNhanh.cs" />
-    <Compile Include="BS_Layer\BS_DMLoaiGD.cs" />
-    <Compile Include="BS_Layer\BS_DMLoaiTien.cs" />
-    <Compile Include="BS_Layer\BS_DMLoaiTietKiem.cs" />
+    <Compile Include="BS_Layer\BS_DanhMuc.cs" />
     <Compile Include="BS_Layer\BS_DSKhachHang.cs" />
+    <Compile Include="BS_Layer\BS_FromDangNhap.cs" />
     <Compile Include="CN_ThongTin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -201,6 +199,7 @@
     <Compile Include="QL_TKGG_TBDenHan.Designer.cs">
       <DependentUpon>QL_TKGG_TBDenHan.cs</DependentUpon>
     </Compile>
+    <Compile Include="Setting\AppSetting.cs" />
     <Compile Include="TK_SoSoTK.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -512,6 +511,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Bankimg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tải xuống.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images1.jfif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

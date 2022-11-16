@@ -15,7 +15,7 @@ namespace Saving_Account_Management
 {
     public partial class DM_LoaiTien : Form
     {
-        private BS_DMLoaiTien action = new BS_DMLoaiTien();
+        private BS_DanhMuc action = new BS_DanhMuc();
 
         public DM_LoaiTien()
         {

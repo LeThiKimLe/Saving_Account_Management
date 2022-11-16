@@ -13,7 +13,7 @@ namespace Saving_Account_Management
 {
     public partial class DM_LoaiGiaoDich : Form
     {
-        private BS_DMLoaiGD action = new BS_DMLoaiGD();
+        private BS_DanhMuc action = new BS_DanhMuc();
         public DM_LoaiGiaoDich()
         {
             InitializeComponent();

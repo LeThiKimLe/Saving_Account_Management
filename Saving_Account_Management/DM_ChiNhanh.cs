@@ -15,7 +15,7 @@ namespace Saving_Account_Management
 {
     public partial class DM_ChiNhanh : Form
     {
-        private BS_DMChiNhanh action = new BS_DMChiNhanh();
+        private BS_DanhMuc action = new BS_DanhMuc();
         public DM_ChiNhanh()
         {
             InitializeComponent();

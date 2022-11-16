@@ -10,7 +10,7 @@ namespace Saving_Account_Management.DB_Layer
 {
     public class DB_Connect
     {
-        public SqlConnection Conn = new SqlConnection("Data Source=THUYTRANG;Initial Catalog=QUANLYTAIKHOANTIETKIEM,integrated security=true");
+        public SqlConnection Conn = new SqlConnection("Data Source=THUYTRANG;Initial Catalog=QUANLYTAIKHOANTIETKIEMNGANHANG;integrated security=true");
 
         public void myConnect()
         {
@@ -35,7 +35,8 @@ namespace Saving_Account_Management.DB_Layer
         string connectString;
         public DB_Connect()
         {
-            connectString = "Data Source=tcp:DESKTOP-SH243I1;Initial Catalog=QUANLYTAIKHOANTIETKIEM;User ID=sa;Password=Conchosu@1";
+            //  connectString = "Data Source=tcp:DESKTOP-SH243I1;Initial Catalog=QUANLYTAIKHOANTIETKIEMNGANHANG;User ID=sa;Password=Conchosu@1";
+            connectString = "Data Source=THUYTRANG;Initial Catalog=QUANLYTAIKHOANTIETKIEMNGANHANG;integrated security=true";
             link = new SqlConnection(connectString);
             comm = link.CreateCommand();
         }

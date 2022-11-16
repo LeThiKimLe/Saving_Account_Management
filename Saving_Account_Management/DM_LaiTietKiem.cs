@@ -13,7 +13,7 @@ namespace Saving_Account_Management
 {
     public partial class DM_LaiTietKiem : Form
     {
-        private BS_DMLoaiTietKiem action = new BS_DMLoaiTietKiem();
+        private BS_DanhMuc action = new BS_DanhMuc();
 
         public DM_LaiTietKiem()
         {
@@ -30,5 +30,10 @@ namespace Saving_Account_Management
 
         }
 
+        private void textBox_Search_TextChanged(object sender, EventArgs e)
+        {
+            dataGridView_LoaiTK.DataSource = action.TimKiemThongTin(textBox_Search.Text);
+            dataGridView_LoaiTK.AutoResizeColumns();
+        }
     }
 }
