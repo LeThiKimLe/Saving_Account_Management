@@ -11,8 +11,6 @@ namespace Saving_Account_Management.DB_Layer
         string connectString;
         public DB_Connect()
         {
-            //connectString = "Data Source=tcp:DESKTOP-SH243I1;Initial Catalog=QUANLYTAIKHOANTIETKIEM;User ID=sa;Password=Conchosu@1";
-            //connectString = "Data Source=.;Initial Catalog=QUANLYTAIKHOANTIETKIEMNGANHANG;Integrated Security=True";
             connectString = "Data Source=tcp:DESKTOP-SH243I1;Initial Catalog=QUANLYTAIKHOANTIETKIEM;User ID=sa;Password=123456";
             link = new SqlConnection(connectString);
             comm = link.CreateCommand();
@@ -71,6 +69,24 @@ namespace Saving_Account_Management.DB_Layer
                 link.Close();
             }
             return f;
+        }
+      
+       public void myConnect()
+        {
+            Conn.Open();
+        }
+        //combobox sự kiện selectindexchange
+        public void myClose()
+        {
+            Conn.Close();
+        }
+
+        public DataTable createTable(string sql)
+        {
+            DataTable dt = new DataTable();
+            SqlDataAdapter ds = new SqlDataAdapter(sql, Conn);
+            ds.Fill(dt);
+            return dt;
         }
 
     }

@@ -80,6 +80,7 @@ namespace Saving_Account_Management
             this.panel4 = new System.Windows.Forms.Panel();
             this.button7 = new System.Windows.Forms.Button();
             this.btn_CNThongTin = new System.Windows.Forms.Button();
+            this.btn_Logout = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage4.SuspendLayout();
             this.panel7.SuspendLayout();
@@ -218,8 +219,10 @@ namespace Saving_Account_Management
             this.btn_DSSoTK.ForeColor = System.Drawing.Color.Teal;
             this.btn_DSSoTK.Image = global::Saving_Account_Management.Properties.Resources.frmDanhSachSoTK;
             this.btn_DSSoTK.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+
             this.btn_DSSoTK.Location = new System.Drawing.Point(3, 2);
             this.btn_DSSoTK.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+
             this.btn_DSSoTK.Name = "btn_DSSoTK";
             this.btn_DSSoTK.Size = new System.Drawing.Size(100, 94);
             this.btn_DSSoTK.TabIndex = 0;
@@ -272,8 +275,10 @@ namespace Saving_Account_Management
             this.btn_TKGG_MoSo.ForeColor = System.Drawing.Color.Teal;
             this.btn_TKGG_MoSo.Image = global::Saving_Account_Management.Properties.Resources.frmMoSoTietKiem;
             this.btn_TKGG_MoSo.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+
             this.btn_TKGG_MoSo.Location = new System.Drawing.Point(3, 2);
             this.btn_TKGG_MoSo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+
             this.btn_TKGG_MoSo.Name = "btn_TKGG_MoSo";
             this.btn_TKGG_MoSo.Size = new System.Drawing.Size(69, 94);
             this.btn_TKGG_MoSo.TabIndex = 3;
@@ -292,8 +297,10 @@ namespace Saving_Account_Management
             this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+
             this.button15.Location = new System.Drawing.Point(0, 102);
             this.button15.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+
             this.button15.Name = "button15";
             this.button15.Size = new System.Drawing.Size(277, 46);
             this.button15.TabIndex = 2;
@@ -308,6 +315,7 @@ namespace Saving_Account_Management
             this.panel8.Controls.Add(this.btn_QLDSKhachHang);
             this.panel8.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+
             this.panel8.Location = new System.Drawing.Point(1427, 2);
             this.panel8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel8.Name = "panel8";
@@ -324,6 +332,7 @@ namespace Saving_Account_Management
             this.btn_QLTacVuKH.ForeColor = System.Drawing.Color.Teal;
             this.btn_QLTacVuKH.Image = global::Saving_Account_Management.Properties.Resources.frmTaiKhoan;
             this.btn_QLTacVuKH.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+
             this.btn_QLTacVuKH.Location = new System.Drawing.Point(124, 2);
             this.btn_QLTacVuKH.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_QLTacVuKH.Name = "btn_QLTacVuKH";
@@ -343,8 +352,10 @@ namespace Saving_Account_Management
             this.button21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button21.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+
             this.button21.Location = new System.Drawing.Point(0, 102);
             this.button21.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+
             this.button21.Name = "button21";
             this.button21.Size = new System.Drawing.Size(233, 46);
             this.button21.TabIndex = 2;
@@ -361,6 +372,7 @@ namespace Saving_Account_Management
             this.btn_QLDSKhachHang.ForeColor = System.Drawing.Color.Teal;
             this.btn_QLDSKhachHang.Image = global::Saving_Account_Management.Properties.Resources.frmKhachHang;
             this.btn_QLDSKhachHang.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+
             this.btn_QLDSKhachHang.Location = new System.Drawing.Point(3, 2);
             this.btn_QLDSKhachHang.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_QLDSKhachHang.Name = "btn_QLDSKhachHang";
@@ -379,12 +391,14 @@ namespace Saving_Account_Management
             this.panel9.Controls.Add(this.button26);
             this.panel9.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+
             this.panel9.Location = new System.Drawing.Point(819, 2);
             this.panel9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(317, 150);
             this.panel9.TabIndex = 4;
             // 
+
             // btn_TK1L_GiaoDichTK
             // 
             this.btn_TK1L_GiaoDichTK.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -415,8 +429,10 @@ namespace Saving_Account_Management
             this.btn_TK1L_MoSo.ForeColor = System.Drawing.Color.Teal;
             this.btn_TK1L_MoSo.Image = global::Saving_Account_Management.Properties.Resources.frmMoSoTietKiem;
             this.btn_TK1L_MoSo.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+
             this.btn_TK1L_MoSo.Location = new System.Drawing.Point(3, 2);
             this.btn_TK1L_MoSo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+
             this.btn_TK1L_MoSo.Name = "btn_TK1L_MoSo";
             this.btn_TK1L_MoSo.Size = new System.Drawing.Size(89, 94);
             this.btn_TK1L_MoSo.TabIndex = 3;
@@ -435,8 +451,10 @@ namespace Saving_Account_Management
             this.button26.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button26.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button26.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+
             this.button26.Location = new System.Drawing.Point(0, 102);
             this.button26.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+
             this.button26.Name = "button26";
             this.button26.Size = new System.Drawing.Size(315, 46);
             this.button26.TabIndex = 2;
@@ -451,6 +469,7 @@ namespace Saving_Account_Management
             this.panel10.Controls.Add(this.btn_QLDSNhanVien);
             this.panel10.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+
             this.panel10.Location = new System.Drawing.Point(348, 2);
             this.panel10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel10.Name = "panel10";
@@ -467,6 +486,7 @@ namespace Saving_Account_Management
             this.button29.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button29.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button29.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+
             this.button29.Location = new System.Drawing.Point(0, 102);
             this.button29.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button29.Name = "button29";
@@ -485,6 +505,7 @@ namespace Saving_Account_Management
             this.btn_TKDangNhap.ForeColor = System.Drawing.Color.Teal;
             this.btn_TKDangNhap.Image = global::Saving_Account_Management.Properties.Resources.frmSoKhongKHan;
             this.btn_TKDangNhap.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+
             this.btn_TKDangNhap.Location = new System.Drawing.Point(3, 2);
             this.btn_TKDangNhap.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_TKDangNhap.Name = "btn_TKDangNhap";
@@ -505,8 +526,10 @@ namespace Saving_Account_Management
             this.btn_QLDSNhanVien.ForeColor = System.Drawing.Color.Teal;
             this.btn_QLDSNhanVien.Image = global::Saving_Account_Management.Properties.Resources.frmNhomNguoiDung;
             this.btn_QLDSNhanVien.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+
             this.btn_QLDSNhanVien.Location = new System.Drawing.Point(115, 2);
             this.btn_QLDSNhanVien.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+
             this.btn_QLDSNhanVien.Name = "btn_QLDSNhanVien";
             this.btn_QLDSNhanVien.Size = new System.Drawing.Size(109, 94);
             this.btn_QLDSNhanVien.TabIndex = 0;
@@ -525,8 +548,10 @@ namespace Saving_Account_Management
             this.panel13.Controls.Add(this.btn_QLNhomNguoiDung);
             this.panel13.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+
             this.panel13.Location = new System.Drawing.Point(5, 2);
             this.panel13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(337, 150);
             this.panel13.TabIndex = 1;
@@ -542,8 +567,10 @@ namespace Saving_Account_Management
             this.btn_QLPhanQuyen.ForeColor = System.Drawing.Color.Teal;
             this.btn_QLPhanQuyen.Image = global::Saving_Account_Management.Properties.Resources.frmPhanQuyen;
             this.btn_QLPhanQuyen.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+
             this.btn_QLPhanQuyen.Location = new System.Drawing.Point(263, 2);
             this.btn_QLPhanQuyen.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+
             this.btn_QLPhanQuyen.Name = "btn_QLPhanQuyen";
             this.btn_QLPhanQuyen.Size = new System.Drawing.Size(68, 94);
             this.btn_QLPhanQuyen.TabIndex = 5;
@@ -562,6 +589,7 @@ namespace Saving_Account_Management
             this.btn_QLPhanNhom.ForeColor = System.Drawing.Color.Teal;
             this.btn_QLPhanNhom.Image = global::Saving_Account_Management.Properties.Resources.frmPhanNhom;
             this.btn_QLPhanNhom.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+
             this.btn_QLPhanNhom.Location = new System.Drawing.Point(189, 2);
             this.btn_QLPhanNhom.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_QLPhanNhom.Name = "btn_QLPhanNhom";
@@ -582,6 +610,7 @@ namespace Saving_Account_Management
             this.btn_QLQuyen.ForeColor = System.Drawing.Color.Teal;
             this.btn_QLQuyen.Image = global::Saving_Account_Management.Properties.Resources.frmQuyen;
             this.btn_QLQuyen.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+
             this.btn_QLQuyen.Location = new System.Drawing.Point(115, 2);
             this.btn_QLQuyen.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_QLQuyen.Name = "btn_QLQuyen";
@@ -602,6 +631,7 @@ namespace Saving_Account_Management
             this.button42.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button42.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button42.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+
             this.button42.Location = new System.Drawing.Point(0, 102);
             this.button42.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button42.Name = "button42";
@@ -621,8 +651,10 @@ namespace Saving_Account_Management
             this.btn_QLNhomNguoiDung.ForeColor = System.Drawing.Color.Teal;
             this.btn_QLNhomNguoiDung.Image = global::Saving_Account_Management.Properties.Resources.frmNhomNguoiDung;
             this.btn_QLNhomNguoiDung.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+
             this.btn_QLNhomNguoiDung.Location = new System.Drawing.Point(3, 2);
             this.btn_QLNhomNguoiDung.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+
             this.btn_QLNhomNguoiDung.Name = "btn_QLNhomNguoiDung";
             this.btn_QLNhomNguoiDung.Size = new System.Drawing.Size(107, 94);
             this.btn_QLNhomNguoiDung.TabIndex = 0;
@@ -635,6 +667,7 @@ namespace Saving_Account_Management
             // 
             this.tabPage5.Controls.Add(this.task_screen2);
             this.tabPage5.Controls.Add(this.panel14);
+
             this.tabPage5.Location = new System.Drawing.Point(4, 25);
             this.tabPage5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage5.Name = "tabPage5";
@@ -649,8 +682,10 @@ namespace Saving_Account_Management
             this.task_screen2.BackgroundImage = global::Saving_Account_Management.Properties.Resources.Bankimg;
             this.task_screen2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.task_screen2.Dock = System.Windows.Forms.DockStyle.Fill;
+
             this.task_screen2.Location = new System.Drawing.Point(3, 158);
             this.task_screen2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+
             this.task_screen2.Name = "task_screen2";
             this.task_screen2.Size = new System.Drawing.Size(1357, 561);
             this.task_screen2.TabIndex = 3;
@@ -661,8 +696,10 @@ namespace Saving_Account_Management
             this.panel14.BackgroundImage = global::Saving_Account_Management.Properties.Resources.color1;
             this.panel14.Controls.Add(this.panel15);
             this.panel14.Dock = System.Windows.Forms.DockStyle.Top;
+
             this.panel14.Location = new System.Drawing.Point(3, 2);
             this.panel14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+
             this.panel14.Name = "panel14";
             this.panel14.Size = new System.Drawing.Size(1357, 156);
             this.panel14.TabIndex = 2;
@@ -677,8 +714,10 @@ namespace Saving_Account_Management
             this.panel15.Controls.Add(this.btn_DMLoaiTien);
             this.panel15.Controls.Add(this.button47);
             this.panel15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+
             this.panel15.Location = new System.Drawing.Point(5, 2);
             this.panel15.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+
             this.panel15.Name = "panel15";
             this.panel15.Size = new System.Drawing.Size(466, 150);
             this.panel15.TabIndex = 1;
@@ -694,8 +733,10 @@ namespace Saving_Account_Management
             this.btn_DMLaiTietKiem.ForeColor = System.Drawing.Color.Teal;
             this.btn_DMLaiTietKiem.Image = global::Saving_Account_Management.Properties.Resources.frmGuiThemVon;
             this.btn_DMLaiTietKiem.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+
             this.btn_DMLaiTietKiem.Location = new System.Drawing.Point(112, 2);
             this.btn_DMLaiTietKiem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+
             this.btn_DMLaiTietKiem.Name = "btn_DMLaiTietKiem";
             this.btn_DMLaiTietKiem.Size = new System.Drawing.Size(116, 94);
             this.btn_DMLaiTietKiem.TabIndex = 5;
@@ -715,8 +756,10 @@ namespace Saving_Account_Management
             this.btn_DMLoaiGiaoDich.ForeColor = System.Drawing.Color.Teal;
             this.btn_DMLoaiGiaoDich.Image = global::Saving_Account_Management.Properties.Resources.frmSoCoKyHan;
             this.btn_DMLoaiGiaoDich.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+
             this.btn_DMLoaiGiaoDich.Location = new System.Drawing.Point(235, 2);
             this.btn_DMLoaiGiaoDich.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+
             this.btn_DMLoaiGiaoDich.Name = "btn_DMLoaiGiaoDich";
             this.btn_DMLoaiGiaoDich.Size = new System.Drawing.Size(111, 94);
             this.btn_DMLoaiGiaoDich.TabIndex = 4;
@@ -736,8 +779,10 @@ namespace Saving_Account_Management
             this.btn_DMChiNhanh.ForeColor = System.Drawing.Color.Teal;
             this.btn_DMChiNhanh.Image = global::Saving_Account_Management.Properties.Resources.frmQuayGD;
             this.btn_DMChiNhanh.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+
             this.btn_DMChiNhanh.Location = new System.Drawing.Point(351, 2);
             this.btn_DMChiNhanh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+
             this.btn_DMChiNhanh.Name = "btn_DMChiNhanh";
             this.btn_DMChiNhanh.Size = new System.Drawing.Size(107, 94);
             this.btn_DMChiNhanh.TabIndex = 0;
@@ -757,8 +802,10 @@ namespace Saving_Account_Management
             this.btn_DMLoaiTien.ForeColor = System.Drawing.Color.Teal;
             this.btn_DMLoaiTien.Image = global::Saving_Account_Management.Properties.Resources.frmDMLoaiTien;
             this.btn_DMLoaiTien.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+
             this.btn_DMLoaiTien.Location = new System.Drawing.Point(3, 2);
             this.btn_DMLoaiTien.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+
             this.btn_DMLoaiTien.Name = "btn_DMLoaiTien";
             this.btn_DMLoaiTien.Size = new System.Drawing.Size(103, 94);
             this.btn_DMLoaiTien.TabIndex = 3;
@@ -777,8 +824,10 @@ namespace Saving_Account_Management
             this.button47.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button47.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button47.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+
             this.button47.Location = new System.Drawing.Point(0, 102);
             this.button47.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+
             this.button47.Name = "button47";
             this.button47.Size = new System.Drawing.Size(464, 46);
             this.button47.TabIndex = 2;
@@ -790,11 +839,13 @@ namespace Saving_Account_Management
             // 
             this.tabPage6.Controls.Add(this.task_screen3);
             this.tabPage6.Controls.Add(this.panel1);
+
             this.tabPage6.Location = new System.Drawing.Point(4, 25);
             this.tabPage6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage6.Size = new System.Drawing.Size(1363, 721);
+
             this.tabPage6.TabIndex = 2;
             this.tabPage6.Text = "THỐNG KÊ";
             this.tabPage6.UseVisualStyleBackColor = true;
@@ -804,10 +855,12 @@ namespace Saving_Account_Management
             this.task_screen3.BackgroundImage = global::Saving_Account_Management.Properties.Resources.Bankimg;
             this.task_screen3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.task_screen3.Dock = System.Windows.Forms.DockStyle.Fill;
+
             this.task_screen3.Location = new System.Drawing.Point(3, 158);
             this.task_screen3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.task_screen3.Name = "task_screen3";
             this.task_screen3.Size = new System.Drawing.Size(1357, 561);
+
             this.task_screen3.TabIndex = 4;
             // 
             // panel1
@@ -816,10 +869,12 @@ namespace Saving_Account_Management
             this.panel1.BackgroundImage = global::Saving_Account_Management.Properties.Resources.color1;
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+
             this.panel1.Location = new System.Drawing.Point(3, 2);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1357, 156);
+
             this.panel1.TabIndex = 3;
             // 
             // panel2
@@ -828,8 +883,10 @@ namespace Saving_Account_Management
             this.panel2.Controls.Add(this.button4);
             this.panel2.Controls.Add(this.btn_TKSoSoTK);
             this.panel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+
             this.panel2.Location = new System.Drawing.Point(5, 2);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(221, 150);
             this.panel2.TabIndex = 1;
@@ -843,8 +900,10 @@ namespace Saving_Account_Management
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+
             this.button4.Location = new System.Drawing.Point(0, 102);
             this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(219, 46);
             this.button4.TabIndex = 2;
@@ -862,8 +921,10 @@ namespace Saving_Account_Management
             this.btn_TKSoSoTK.ForeColor = System.Drawing.Color.Teal;
             this.btn_TKSoSoTK.Image = global::Saving_Account_Management.Properties.Resources.frmSoDuTK;
             this.btn_TKSoSoTK.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+
             this.btn_TKSoSoTK.Location = new System.Drawing.Point(49, 2);
             this.btn_TKSoSoTK.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+
             this.btn_TKSoSoTK.Name = "btn_TKSoSoTK";
             this.btn_TKSoSoTK.Size = new System.Drawing.Size(107, 94);
             this.btn_TKSoSoTK.TabIndex = 0;
@@ -876,11 +937,13 @@ namespace Saving_Account_Management
             // 
             this.tabPage1.Controls.Add(this.task_screen4);
             this.tabPage1.Controls.Add(this.panel3);
+
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage1.Size = new System.Drawing.Size(1363, 721);
+
             this.tabPage1.TabIndex = 3;
             this.tabPage1.Text = "CÁ NHÂN";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -890,22 +953,27 @@ namespace Saving_Account_Management
             this.task_screen4.BackgroundImage = global::Saving_Account_Management.Properties.Resources.Bankimg;
             this.task_screen4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.task_screen4.Dock = System.Windows.Forms.DockStyle.Fill;
+
             this.task_screen4.Location = new System.Drawing.Point(3, 158);
             this.task_screen4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.task_screen4.Name = "task_screen4";
             this.task_screen4.Size = new System.Drawing.Size(1357, 561);
+
             this.task_screen4.TabIndex = 5;
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.Transparent;
             this.panel3.BackgroundImage = global::Saving_Account_Management.Properties.Resources.color1;
+            this.panel3.Controls.Add(this.btn_Logout);
             this.panel3.Controls.Add(this.panel4);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+
             this.panel3.Location = new System.Drawing.Point(3, 2);
             this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1357, 156);
+
             this.panel3.TabIndex = 4;
             // 
             // panel4
@@ -914,8 +982,10 @@ namespace Saving_Account_Management
             this.panel4.Controls.Add(this.button7);
             this.panel4.Controls.Add(this.btn_CNThongTin);
             this.panel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+
             this.panel4.Location = new System.Drawing.Point(5, 2);
             this.panel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(225, 150);
             this.panel4.TabIndex = 1;
@@ -929,8 +999,10 @@ namespace Saving_Account_Management
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+
             this.button7.Location = new System.Drawing.Point(0, 102);
             this.button7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(223, 46);
             this.button7.TabIndex = 2;
@@ -948,8 +1020,10 @@ namespace Saving_Account_Management
             this.btn_CNThongTin.ForeColor = System.Drawing.Color.Teal;
             this.btn_CNThongTin.Image = global::Saving_Account_Management.Properties.Resources.frmNhanVien;
             this.btn_CNThongTin.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+
             this.btn_CNThongTin.Location = new System.Drawing.Point(48, 2);
             this.btn_CNThongTin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+
             this.btn_CNThongTin.Name = "btn_CNThongTin";
             this.btn_CNThongTin.Size = new System.Drawing.Size(107, 94);
             this.btn_CNThongTin.TabIndex = 0;
@@ -958,6 +1032,17 @@ namespace Saving_Account_Management
             this.btn_CNThongTin.UseVisualStyleBackColor = true;
             this.btn_CNThongTin.Click += new System.EventHandler(this.btn_CNThongTin_Click);
             // 
+            // btn_Logout
+            // 
+            this.btn_Logout.BackColor = System.Drawing.Color.Teal;
+            this.btn_Logout.Location = new System.Drawing.Point(880, 92);
+            this.btn_Logout.Name = "btn_Logout";
+            this.btn_Logout.Size = new System.Drawing.Size(98, 32);
+            this.btn_Logout.TabIndex = 2;
+            this.btn_Logout.Text = "Đăng xuất";
+            this.btn_Logout.UseVisualStyleBackColor = false;
+            this.btn_Logout.Click += new System.EventHandler(this.btn_Logout_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -965,7 +1050,9 @@ namespace Saving_Account_Management
             this.BackColor = System.Drawing.Color.Linen;
             this.ClientSize = new System.Drawing.Size(1448, 750);
             this.Controls.Add(this.tabControl1);
+
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+
             this.MinimizeBox = false;
             this.Name = "Form1";
             this.Text = "Form1";
@@ -1045,7 +1132,7 @@ namespace Saving_Account_Management
         private System.Windows.Forms.Panel task_screen2;
         private System.Windows.Forms.Panel task_screen3;
         private System.Windows.Forms.Panel task_screen4;
-        
+        private System.Windows.Forms.Button btn_Logout;
     }
 }
 
