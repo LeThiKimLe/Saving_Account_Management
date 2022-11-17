@@ -80,6 +80,7 @@ namespace Saving_Account_Management
             this.panel4 = new System.Windows.Forms.Panel();
             this.button7 = new System.Windows.Forms.Button();
             this.btn_CNThongTin = new System.Windows.Forms.Button();
+
             this.btn_Logout = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage4.SuspendLayout();
@@ -1032,6 +1033,7 @@ namespace Saving_Account_Management
             this.btn_CNThongTin.UseVisualStyleBackColor = true;
             this.btn_CNThongTin.Click += new System.EventHandler(this.btn_CNThongTin_Click);
             // 
+
             // btn_Logout
             // 
             this.btn_Logout.BackColor = System.Drawing.Color.Teal;
@@ -1043,6 +1045,7 @@ namespace Saving_Account_Management
             this.btn_Logout.UseVisualStyleBackColor = false;
             this.btn_Logout.Click += new System.EventHandler(this.btn_Logout_Click);
             // 
+
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1133,6 +1136,7 @@ namespace Saving_Account_Management
         private System.Windows.Forms.Panel task_screen3;
         private System.Windows.Forms.Panel task_screen4;
         private System.Windows.Forms.Button btn_Logout;
+
     }
 }
 
