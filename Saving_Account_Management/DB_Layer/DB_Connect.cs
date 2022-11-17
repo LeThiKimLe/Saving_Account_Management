@@ -1,42 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Data;
+﻿using System.Data;
 using System.Data.SqlClient;
 
 namespace Saving_Account_Management.DB_Layer
 {
     public class DB_Connect
     {
-        public SqlConnection Conn = new SqlConnection("Data Source=THUYTRANG;Initial Catalog=QUANLYTAIKHOANTIETKIEMNGANHANG;integrated security=true");
-
-        public void myConnect()
-        {
-            Conn.Open();
-        }
-        //combobox sự kiện selectindexchange
-        public void myClose()
-        {
-            Conn.Close();
-        }
-
-        public DataTable createTable(string sql)
-        {
-            DataTable dt = new DataTable();
-            SqlDataAdapter ds = new SqlDataAdapter(sql, Conn);
-            ds.Fill(dt);
-            return dt;
-        }
-        SqlConnection link=null;
+        SqlConnection link = null;
         public SqlCommand comm = null;
         SqlDataAdapter da = null;
         string connectString;
         public DB_Connect()
         {
-            //  connectString = "Data Source=tcp:DESKTOP-SH243I1;Initial Catalog=QUANLYTAIKHOANTIETKIEMNGANHANG;User ID=sa;Password=Conchosu@1";
-            connectString = "Data Source=THUYTRANG;Initial Catalog=QUANLYTAIKHOANTIETKIEMNGANHANG;integrated security=true";
+            connectString = "Data Source=tcp:DESKTOP-SH243I1;Initial Catalog=QUANLYTAIKHOANTIETKIEM;User ID=sa;Password=123456";
             link = new SqlConnection(connectString);
             comm = link.CreateCommand();
         }
@@ -44,16 +19,16 @@ namespace Saving_Account_Management.DB_Layer
         public void new_comm()
         {
             comm = link.CreateCommand();
-
         }
 
-        public DataSet ExecuteQueryDataSet(string strSQL, CommandType ct)
+        public DataSet ExecuteQueryDataSet(string strSQL, CommandType ct, params SqlParameter[] sqlParameters)
         {
             if (link.State == ConnectionState.Open)
                 link.Close();
             link.Open();
             comm.CommandText = strSQL;
             comm.CommandType = ct;
+            comm.Parameters.AddRange(sqlParameters);
             da = new SqlDataAdapter(comm);
             DataSet ds = new DataSet();
             da.Fill(ds);
@@ -87,7 +62,7 @@ namespace Saving_Account_Management.DB_Layer
             }
             catch (SqlException ex)
             {
-                error = ex.Message;
+                error = ex.Errors[0].Message;
             }
             finally
             {
@@ -95,5 +70,24 @@ namespace Saving_Account_Management.DB_Layer
             }
             return f;
         }
+      
+       public void myConnect()
+        {
+            Conn.Open();
+        }
+        //combobox sự kiện selectindexchange
+        public void myClose()
+        {
+            Conn.Close();
+        }
+
+        public DataTable createTable(string sql)
+        {
+            DataTable dt = new DataTable();
+            SqlDataAdapter ds = new SqlDataAdapter(sql, Conn);
+            ds.Fill(dt);
+            return dt;
+        }
+
     }
 }
