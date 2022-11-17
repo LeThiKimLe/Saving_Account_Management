@@ -31,6 +31,16 @@ namespace Saving_Account_Management
         {
             this.gb_DSKhachHang = new System.Windows.Forms.GroupBox();
             this.dgv_KhachHang = new System.Windows.Forms.DataGridView();
+            this.MaKhachHang = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.HoTen = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NgaySinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SDT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MaDinhDanh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NgayCap = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NoiCap = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DiaChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cbDangSD = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.ChuKy = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label10 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
@@ -60,16 +70,6 @@ namespace Saving_Account_Management
             this.rdb_TimKiemMa = new System.Windows.Forms.RadioButton();
             this.txt_TimKiem = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.MaKhachHang = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.HoTen = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NgaySinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SDT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MaDinhDanh = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NgayCap = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NoiCap = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DiaChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cbDangSD = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.ChuKy = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gb_DSKhachHang.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_KhachHang)).BeginInit();
             this.panel1.SuspendLayout();
@@ -114,6 +114,89 @@ namespace Saving_Account_Management
             this.dgv_KhachHang.TabIndex = 20;
             this.dgv_KhachHang.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_KhachHang_CellClick);
             // 
+            // MaKhachHang
+            // 
+            this.MaKhachHang.DataPropertyName = "MaKhachHang";
+            this.MaKhachHang.HeaderText = "Mã khách hàng";
+            this.MaKhachHang.MinimumWidth = 6;
+            this.MaKhachHang.Name = "MaKhachHang";
+            this.MaKhachHang.Width = 160;
+            // 
+            // HoTen
+            // 
+            this.HoTen.DataPropertyName = "HoTen";
+            this.HoTen.HeaderText = "Họ tên";
+            this.HoTen.MinimumWidth = 6;
+            this.HoTen.Name = "HoTen";
+            this.HoTen.Width = 150;
+            // 
+            // NgaySinh
+            // 
+            this.NgaySinh.DataPropertyName = "NgaySinh";
+            this.NgaySinh.HeaderText = "Ngày sinh";
+            this.NgaySinh.MinimumWidth = 6;
+            this.NgaySinh.Name = "NgaySinh";
+            this.NgaySinh.Width = 125;
+            // 
+            // SDT
+            // 
+            this.SDT.DataPropertyName = "SDT";
+            this.SDT.HeaderText = "Số điện thoại";
+            this.SDT.MinimumWidth = 6;
+            this.SDT.Name = "SDT";
+            this.SDT.Width = 145;
+            // 
+            // MaDinhDanh
+            // 
+            this.MaDinhDanh.DataPropertyName = "MaDinhDanh";
+            this.MaDinhDanh.HeaderText = "Mã định danh";
+            this.MaDinhDanh.MinimumWidth = 6;
+            this.MaDinhDanh.Name = "MaDinhDanh";
+            this.MaDinhDanh.Width = 145;
+            // 
+            // NgayCap
+            // 
+            this.NgayCap.DataPropertyName = "NgayCap";
+            this.NgayCap.HeaderText = "Ngày cấp";
+            this.NgayCap.MinimumWidth = 6;
+            this.NgayCap.Name = "NgayCap";
+            this.NgayCap.Width = 125;
+            // 
+            // NoiCap
+            // 
+            this.NoiCap.DataPropertyName = "NoiCap";
+            this.NoiCap.HeaderText = "Nơi cấp";
+            this.NoiCap.MinimumWidth = 6;
+            this.NoiCap.Name = "NoiCap";
+            this.NoiCap.Width = 140;
+            // 
+            // DiaChi
+            // 
+            this.DiaChi.DataPropertyName = "DiaChi";
+            this.DiaChi.HeaderText = "Địa chỉ";
+            this.DiaChi.MinimumWidth = 6;
+            this.DiaChi.Name = "DiaChi";
+            this.DiaChi.Width = 125;
+            // 
+            // cbDangSD
+            // 
+            this.cbDangSD.DataPropertyName = "DangSuDung";
+            this.cbDangSD.HeaderText = "Đang sử dụng";
+            this.cbDangSD.MinimumWidth = 6;
+            this.cbDangSD.Name = "cbDangSD";
+            this.cbDangSD.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.cbDangSD.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.cbDangSD.Width = 150;
+            // 
+            // ChuKy
+            // 
+            this.ChuKy.DataPropertyName = "ChuKy";
+            this.ChuKy.HeaderText = "Chữ ký";
+            this.ChuKy.MinimumWidth = 6;
+            this.ChuKy.Name = "ChuKy";
+            this.ChuKy.Visible = false;
+            this.ChuKy.Width = 125;
+            // 
             // label10
             // 
             this.label10.AutoSize = true;
@@ -154,6 +237,7 @@ namespace Saving_Account_Management
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(983, 346);
             this.panel1.TabIndex = 0;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // label5
             // 
@@ -399,89 +483,6 @@ namespace Saving_Account_Management
             this.label12.Size = new System.Drawing.Size(199, 23);
             this.label12.TabIndex = 10;
             this.label12.Text = "Nhập thông tin cần tìm: ";
-            // 
-            // MaKhachHang
-            // 
-            this.MaKhachHang.DataPropertyName = "MaKhachHang";
-            this.MaKhachHang.HeaderText = "Mã khách hàng";
-            this.MaKhachHang.MinimumWidth = 6;
-            this.MaKhachHang.Name = "MaKhachHang";
-            this.MaKhachHang.Width = 160;
-            // 
-            // HoTen
-            // 
-            this.HoTen.DataPropertyName = "HoTen";
-            this.HoTen.HeaderText = "Họ tên";
-            this.HoTen.MinimumWidth = 6;
-            this.HoTen.Name = "HoTen";
-            this.HoTen.Width = 150;
-            // 
-            // NgaySinh
-            // 
-            this.NgaySinh.DataPropertyName = "NgaySinh";
-            this.NgaySinh.HeaderText = "Ngày sinh";
-            this.NgaySinh.MinimumWidth = 6;
-            this.NgaySinh.Name = "NgaySinh";
-            this.NgaySinh.Width = 125;
-            // 
-            // SDT
-            // 
-            this.SDT.DataPropertyName = "SDT";
-            this.SDT.HeaderText = "Số điện thoại";
-            this.SDT.MinimumWidth = 6;
-            this.SDT.Name = "SDT";
-            this.SDT.Width = 145;
-            // 
-            // MaDinhDanh
-            // 
-            this.MaDinhDanh.DataPropertyName = "MaDinhDanh";
-            this.MaDinhDanh.HeaderText = "Mã định danh";
-            this.MaDinhDanh.MinimumWidth = 6;
-            this.MaDinhDanh.Name = "MaDinhDanh";
-            this.MaDinhDanh.Width = 145;
-            // 
-            // NgayCap
-            // 
-            this.NgayCap.DataPropertyName = "NgayCap";
-            this.NgayCap.HeaderText = "Ngày cấp";
-            this.NgayCap.MinimumWidth = 6;
-            this.NgayCap.Name = "NgayCap";
-            this.NgayCap.Width = 125;
-            // 
-            // NoiCap
-            // 
-            this.NoiCap.DataPropertyName = "NoiCap";
-            this.NoiCap.HeaderText = "Nơi cấp";
-            this.NoiCap.MinimumWidth = 6;
-            this.NoiCap.Name = "NoiCap";
-            this.NoiCap.Width = 140;
-            // 
-            // DiaChi
-            // 
-            this.DiaChi.DataPropertyName = "DiaChi";
-            this.DiaChi.HeaderText = "Địa chỉ";
-            this.DiaChi.MinimumWidth = 6;
-            this.DiaChi.Name = "DiaChi";
-            this.DiaChi.Width = 125;
-            // 
-            // cbDangSD
-            // 
-            this.cbDangSD.DataPropertyName = "DangSuDung";
-            this.cbDangSD.HeaderText = "Đang sử dụng";
-            this.cbDangSD.MinimumWidth = 6;
-            this.cbDangSD.Name = "cbDangSD";
-            this.cbDangSD.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.cbDangSD.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.cbDangSD.Width = 150;
-            // 
-            // ChuKy
-            // 
-            this.ChuKy.DataPropertyName = "ChuKy";
-            this.ChuKy.HeaderText = "Chữ ký";
-            this.ChuKy.MinimumWidth = 6;
-            this.ChuKy.Name = "ChuKy";
-            this.ChuKy.Visible = false;
-            this.ChuKy.Width = 125;
             // 
             // QL_DSKhachHang
             // 

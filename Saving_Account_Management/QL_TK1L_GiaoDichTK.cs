@@ -41,5 +41,10 @@ namespace Saving_Account_Management
         {
 
         }
+
+        private void label_hoadon_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

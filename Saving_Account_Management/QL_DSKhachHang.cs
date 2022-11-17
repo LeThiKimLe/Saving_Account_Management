@@ -89,6 +89,9 @@ namespace Saving_Account_Management
             this.ptbChuky.BackgroundImage = Image.FromStream(new MemoryStream((byte[])dgv_KhachHang.Rows[r].Cells[9].Value));
         }
 
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
 
+        }
     }
 }

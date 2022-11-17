@@ -35,11 +35,6 @@ namespace Saving_Account_Management
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colum3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label13 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox9 = new System.Windows.Forms.TextBox();
@@ -61,6 +56,12 @@ namespace Saving_Account_Management
             this.NgayDenHan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SoDu = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colum3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gb_TK1L_GiaoDichTK.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
@@ -142,48 +143,14 @@ namespace Saving_Account_Management
             this.Column2,
             this.colum3,
             this.Column3,
+            this.Column5,
             this.Column4});
-            this.dataGridView2.Location = new System.Drawing.Point(141, 241);
+            this.dataGridView2.Location = new System.Drawing.Point(56, 241);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 51;
             this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(1206, 290);
+            this.dataGridView2.Size = new System.Drawing.Size(1395, 290);
             this.dataGridView2.TabIndex = 3;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Mã Giao Dịch";
-            this.Column1.MinimumWidth = 6;
-            this.Column1.Name = "Column1";
-            this.Column1.Width = 200;
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Tên Loại Giao Dịch";
-            this.Column2.MinimumWidth = 6;
-            this.Column2.Name = "Column2";
-            this.Column2.Width = 200;
-            // 
-            // colum3
-            // 
-            this.colum3.HeaderText = "Ngày Phát Sinh Giao Dịch";
-            this.colum3.MinimumWidth = 6;
-            this.colum3.Name = "colum3";
-            this.colum3.Width = 250;
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Số Tiền";
-            this.Column3.MinimumWidth = 6;
-            this.Column3.Name = "Column3";
-            this.Column3.Width = 200;
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Tình Trạng Thanh Toán";
-            this.Column4.MinimumWidth = 6;
-            this.Column4.Name = "Column4";
-            this.Column4.Width = 200;
             // 
             // label13
             // 
@@ -362,6 +329,48 @@ namespace Saving_Account_Management
             this.SoDu.Name = "SoDu";
             this.SoDu.Width = 300;
             // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Mã Giao Dịch";
+            this.Column1.MinimumWidth = 6;
+            this.Column1.Name = "Column1";
+            this.Column1.Width = 200;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Tên Loại Giao Dịch";
+            this.Column2.MinimumWidth = 6;
+            this.Column2.Name = "Column2";
+            this.Column2.Width = 200;
+            // 
+            // colum3
+            // 
+            this.colum3.HeaderText = "Ngày Phát Sinh Giao Dịch";
+            this.colum3.MinimumWidth = 6;
+            this.colum3.Name = "colum3";
+            this.colum3.Width = 250;
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Số Tiền";
+            this.Column3.MinimumWidth = 6;
+            this.Column3.Name = "Column3";
+            this.Column3.Width = 200;
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "Số Dư Tài Khoản";
+            this.Column5.MinimumWidth = 6;
+            this.Column5.Name = "Column5";
+            this.Column5.Width = 300;
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Tình Trạng Thanh Toán";
+            this.Column4.MinimumWidth = 6;
+            this.Column4.Name = "Column4";
+            this.Column4.Width = 200;
+            // 
             // QL_TK1L_GiaoDichTK
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -392,11 +401,6 @@ namespace Saving_Account_Management
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colum3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox9;
@@ -413,5 +417,11 @@ namespace Saving_Account_Management
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colum3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
     }
 }

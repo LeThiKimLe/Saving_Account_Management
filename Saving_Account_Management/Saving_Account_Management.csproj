@@ -56,6 +56,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BS_Layer\BS_DSKhachHang.cs" />
+    <Compile Include="BS_Layer\BS_DSNhanVien.cs" />
+    <Compile Include="BS_Layer\BS_MoSoTK1L.cs" />
+    <Compile Include="BS_Layer\BS_MoSoTKGG.cs" />
     <Compile Include="CN_ThongTin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -98,6 +101,12 @@
     </Compile>
     <Compile Include="FormDangNhap.Designer.cs">
       <DependentUpon>FormDangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HoaDon.Designer.cs">
+      <DependentUpon>HoaDon.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -223,6 +232,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormDangNhap.resx">
       <DependentUpon>FormDangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HoaDon.resx">
+      <DependentUpon>HoaDon.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -508,6 +520,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Bankimg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="HoaDon\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

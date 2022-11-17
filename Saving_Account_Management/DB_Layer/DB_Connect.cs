@@ -35,7 +35,9 @@ namespace Saving_Account_Management.DB_Layer
         string connectString;
         public DB_Connect()
         {
-            connectString = "Data Source=tcp:DESKTOP-SH243I1;Initial Catalog=QUANLYTAIKHOANTIETKIEM;User ID=sa;Password=Conchosu@1";
+            //connectString = "Data Source=tcp:DESKTOP-SH243I1;Initial Catalog=QUANLYTAIKHOANTIETKIEM;User ID=sa;Password=Conchosu@1";
+            connectString = "Data Source=DESKTOP-KD402KT\\SQL2019;Initial Catalog =TEST;User ID = sa; Password =123456";
+
             link = new SqlConnection(connectString);
             comm = link.CreateCommand();
         }
@@ -81,6 +83,8 @@ namespace Saving_Account_Management.DB_Layer
             comm.CommandType = ct;
             try
             {
+                
+                
                 comm.ExecuteNonQuery();
                 f = true;
             }
