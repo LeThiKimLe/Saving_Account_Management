@@ -286,5 +286,10 @@ namespace Saving_Account_Management
                 MessageBox.Show("Chưa đến hạn gửi góp", "Thông báo");
             }
         }
+
+        private void label_hoadon_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

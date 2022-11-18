@@ -80,6 +80,9 @@ namespace Saving_Account_Management
             this.txt_NoiCap.Enabled = false;
         }
 
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
 
+        }
     }
 }
