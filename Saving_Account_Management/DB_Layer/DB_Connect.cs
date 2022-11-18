@@ -70,6 +70,5 @@ namespace Saving_Account_Management.DB_Layer
             }
             return f;
         }
-
     }
 }
